@@ -1,10 +1,10 @@
-# OpenPhysics `.github`
+# OpenLyceum `.github`
 
-Organization-level GitHub configuration for the [OpenPhysics](https://github.com/OpenPhysics) GitHub
+Organization-level GitHub configuration for the [OpenLyceum](https://github.com/OpenLyceum) GitHub
 organization. Simulation repositories inherit default community health files from this repo when they do
 not define their own.
 
-> **Orchestration lives in [OpenPhysics/Baton](https://github.com/OpenPhysics/Baton).**  This repo 
+> **Orchestration lives in [OpenLyceum/Baton](https://github.com/OpenLyceum/Baton).**  This repo 
 > holds the community-health defaults that GitHub requires in the special `.github` repo.
 
 ## Contents
@@ -35,21 +35,21 @@ link to the org defaults instead (see any sim `README.md` **Contributing** secti
 CD48 hardware libraries (`jscd48`, `tscd48`) keep their own MIT `LICENSE` at the repo root and do not
 inherit the org default.
 
-Each sim repo keeps a **sim-specific** [`CLAUDE.md`](CLAUDE.md) at its root; shared SceneryStack conventions, bootstrap chain, module paths, and CI live in **this** org [`CLAUDE.md`](CLAUDE.md). Fleet structure and accessibility conventions live in [Baton/CONVENTIONS.md](https://github.com/OpenPhysics/Baton/blob/main/CONVENTIONS.md) and [Baton/ACCESSIBILITY.md](https://github.com/OpenPhysics/Baton/blob/main/ACCESSIBILITY.md). Do not add per-repo `AGENTS.md` — use `CLAUDE.md` instead.
+Each sim repo keeps a **sim-specific** [`CLAUDE.md`](CLAUDE.md) at its root; shared SceneryStack conventions, bootstrap chain, module paths, and CI live in **this** org [`CLAUDE.md`](CLAUDE.md). Fleet structure and accessibility conventions live in [Baton/CONVENTIONS.md](https://github.com/OpenLyceum/Baton/blob/main/CONVENTIONS.md) and [Baton/ACCESSIBILITY.md](https://github.com/OpenLyceum/Baton/blob/main/ACCESSIBILITY.md). Do not add per-repo `AGENTS.md` — use `CLAUDE.md` instead.
 
 ## Shared CI, automation, and catalog
 
-These now live in [OpenPhysics/Baton](https://github.com/OpenPhysics/Baton):
+These now live in [OpenLyceum/Baton](https://github.com/OpenLyceum/Baton):
 
 - Reusable CI/CD workflows — each sim's `.github/workflows/ci.yml` calls
-  `uses: OpenPhysics/Baton/.github/workflows/ci.yml@main`
+  `uses: OpenLyceum/Baton/.github/workflows/ci.yml@main`
 - Compliance audit (`shared-compliance-check.yml`) enforcing the six-section README outline
 - Repository catalog (`structure/repos.json`) and the `scripts/` tooling that reads it
 - Dependabot templates (`config/`) and the GitHub Pages landing page (`pages.yml` + `docs/`)
 - Fleet conventions (`CONVENTIONS.md`, `ACCESSIBILITY.md`) and SceneryStack AI reference docs (`skills/`)
 
-See the [Baton README](https://github.com/OpenPhysics/Baton#readme) for usage.
+See the [Baton README](https://github.com/OpenLyceum/Baton#readme) for usage.
 
-The old org Pages URL ([openphysics.github.io/.github](https://openphysics.github.io/.github/))
+The old org Pages URL ([openlyceum.github.io/.github](https://openlyceum.github.io/.github/))
 redirects to the canonical index at
-[openphysics.github.io/Baton](https://openphysics.github.io/Baton/).
+[openlyceum.github.io/Baton](https://openlyceum.github.io/Baton/).

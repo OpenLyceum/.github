@@ -1,6 +1,6 @@
-# Contributing to OpenPhysics
+# Contributing to OpenLyceum
 
-Thank you for your interest in contributing to OpenPhysics simulations and tools.
+Thank you for your interest in contributing to OpenLyceum simulations and tools.
 
 ## How to contribute
 
@@ -34,7 +34,7 @@ Use the repository pull request template when available. Include:
 
 ## Reporting bugs
 
-Open a [bug report issue](https://github.com/OpenPhysics/.github/issues/new/choose) in the affected simulation repository, or use the **Bug report** template if available.
+Open a [bug report issue](https://github.com/OpenLyceum/.github/issues/new/choose) in the affected simulation repository, or use the **Bug report** template if available.
 
 ## Feature requests
 
@@ -42,8 +42,8 @@ Open a **Feature request** issue describing the use case and proposed behavior.
 
 ## Code of conduct
 
-This project follows the [OpenPhysics Code of Conduct](CODE_OF_CONDUCT.md). By participating, you agree to uphold it.
+This project follows the [OpenLyceum Code of Conduct](CODE_OF_CONDUCT.md). By participating, you agree to uphold it.
 
 ## License
 
-By contributing, you agree that your contributions will be licensed under the [GNU Affero General Public License v3.0](LICENSE) used by OpenPhysics simulation repositories. CD48 hardware libraries (`jscd48`, `tscd48`) use the [MIT License](LICENSE-MIT) instead.
+By contributing, you agree that your contributions will be licensed under the [GNU Affero General Public License v3.0](LICENSE) used by OpenLyceum simulation repositories. CD48 hardware libraries (`jscd48`, `tscd48`) use the [MIT License](LICENSE-MIT) instead.

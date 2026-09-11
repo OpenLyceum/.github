@@ -1,12 +1,12 @@
-# CLAUDE.md — OpenPhysics SceneryStack Simulations
+# CLAUDE.md — OpenLyceum SceneryStack Simulations
 
-General guidance for AI assistants working on **any** OpenPhysics SceneryStack simulation repository.
+General guidance for AI assistants working on **any** OpenLyceum SceneryStack simulation repository.
 
 Each sim repo has its own `CLAUDE.md` with **sim-specific** context only (architecture, key files, physics, quirks). Read that file first, then use this document for shared conventions.
 
-Community files (contributing, license, issue templates) live in [OpenPhysics/.github](https://github.com/OpenPhysics/.github). Orchestration — reusable CI/CD workflows, the repo catalog, and the compliance audit — lives in [OpenPhysics/Baton](https://github.com/OpenPhysics/Baton). Simulation READMEs follow a fixed six-section outline enforced by Baton's compliance check.
+Community files (contributing, license, issue templates) live in [OpenLyceum/.github](https://github.com/OpenLyceum/.github). Orchestration — reusable CI/CD workflows, the repo catalog, and the compliance audit — lives in [OpenLyceum/Baton](https://github.com/OpenLyceum/Baton). Simulation READMEs follow a fixed six-section outline enforced by Baton's compliance check.
 
-This document is the broad shared guide. For a single subsystem (colors, layout, drag listeners, preferences, i18n, accessibility, …) there is a deeper per-topic reference in [`Baton/skills/`](https://github.com/OpenPhysics/Baton/tree/main/skills) — each file says when it applies; see its [index](https://github.com/OpenPhysics/Baton/blob/main/skills/README.md). The structural and accessibility conventions live in [Baton/CONVENTIONS.md](https://github.com/OpenPhysics/Baton/blob/main/CONVENTIONS.md) and [Baton/ACCESSIBILITY.md](https://github.com/OpenPhysics/Baton/blob/main/ACCESSIBILITY.md).
+This document is the broad shared guide. For a single subsystem (colors, layout, drag listeners, preferences, i18n, accessibility, …) there is a deeper per-topic reference in [`Baton/skills/`](https://github.com/OpenLyceum/Baton/tree/main/skills) — each file says when it applies; see its [index](https://github.com/OpenLyceum/Baton/blob/main/skills/README.md). The structural and accessibility conventions live in [Baton/CONVENTIONS.md](https://github.com/OpenLyceum/Baton/blob/main/CONVENTIONS.md) and [Baton/ACCESSIBILITY.md](https://github.com/OpenLyceum/Baton/blob/main/ACCESSIBILITY.md).
 
 ## Tech stack
 
@@ -62,12 +62,12 @@ public/
   favicon.ico
   icons/icon.svg  icon-192.png  icon-512.png  apple-touch-icon.png
   screenshots/wide.png  narrow.png
-.github/workflows/ci.yml   ← calls OpenPhysics/Baton reusable CI
+.github/workflows/ci.yml   ← calls OpenLyceum/Baton reusable CI
 ```
 
 Multi-screen sims add one folder per screen (e.g. `composer-screen/`, `single-oscillator/`). Shared code often lives in `src/common/`. There is no top-level `src/model/` or `src/view/` — those live inside a screen folder.
 
-The full structural convention and per-sim checklist live in [Baton/CONVENTIONS.md](https://github.com/OpenPhysics/Baton/blob/main/CONVENTIONS.md) (the structural companion to [Baton/ACCESSIBILITY.md](https://github.com/OpenPhysics/Baton/blob/main/ACCESSIBILITY.md)), enforced by Baton's compliance check.
+The full structural convention and per-sim checklist live in [Baton/CONVENTIONS.md](https://github.com/OpenLyceum/Baton/blob/main/CONVENTIONS.md) (the structural companion to [Baton/ACCESSIBILITY.md](https://github.com/OpenLyceum/Baton/blob/main/ACCESSIBILITY.md)), enforced by Baton's compliance check.
 
 ## Coding conventions
 
@@ -194,7 +194,7 @@ Import `.ts` sources with `.js` extensions in import paths.
 
 All sims follow one shared accessibility pattern so they behave the same internally. The
 canonical reference is `SceneryStackTemplate`; the full convention and per-sim checklist live in
-[Baton/ACCESSIBILITY.md](https://github.com/OpenPhysics/Baton/blob/main/ACCESSIBILITY.md).
+[Baton/ACCESSIBILITY.md](https://github.com/OpenLyceum/Baton/blob/main/ACCESSIBILITY.md).
 Three required layers:
 
 1. **PDOM names** — every interactive node has an `accessibleName` (and `accessibleHelpText` where useful), sourced from `StringManager`'s `a11y` string group.
@@ -235,7 +235,7 @@ npm run lint && npm run check && npm run build
 Each sim's `.github/workflows/ci.yml` calls the reusable workflow:
 
 ```yaml
-uses: OpenPhysics/Baton/.github/workflows/ci.yml@main
+uses: OpenLyceum/Baton/.github/workflows/ci.yml@main
 ```
 
 On push/PR to `main`: `npm run check`, `npm run lint`, `npm run icons && npm run build`.
@@ -269,7 +269,7 @@ vitest.config.ts   ← include: ["tests/**/*.test.ts"]; setupFiles: ["./tests/se
 ```
 
 The vitest `environment` (`happy-dom` default, or `jsdom`/`node`) may vary per sim — document the
-choice in the sim's `CLAUDE.md`. See [Baton/CONVENTIONS.md §5](https://github.com/OpenPhysics/Baton/blob/main/CONVENTIONS.md).
+choice in the sim's `CLAUDE.md`. See [Baton/CONVENTIONS.md §5](https://github.com/OpenLyceum/Baton/blob/main/CONVENTIONS.md).
 
 ## Git hooks
 
