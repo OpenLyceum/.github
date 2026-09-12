@@ -46,4 +46,4 @@ This project follows the [OpenLyceum Code of Conduct](CODE_OF_CONDUCT.md). By pa
 
 ## License
 
-By contributing, you agree that your contributions will be licensed under the [GNU Affero General Public License v3.0](LICENSE) used by OpenLyceum simulation repositories. CD48 hardware libraries (`jscd48`, `tscd48`) use the [MIT License](LICENSE-MIT) instead.
+By contributing, you agree that your contributions will be licensed under the [GNU Affero General Public License v3.0](LICENSE) used by OpenLyceum simulation repositories.

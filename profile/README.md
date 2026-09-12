@@ -111,15 +111,6 @@ Optics, quantum circuits, resonance, Earth science, motion analysis, and more.
 | **[Almanach](https://github.com/OpenLyceum/Almanach)** | [Docs](https://openlyceum.github.io/Almanach/) | SceneryStack knowledge base (humans + LLMs) |
 | **[Baseline](https://github.com/OpenLyceum/Baseline)** | — | Upstream baselines and ground-truth snapshots |
 | **[Baton](https://github.com/OpenLyceum/Baton)** | [Index](https://openlyceum.github.io/Baton/) | Catalog, fleet automation, reusable CI |
-| **[pyro](https://github.com/OpenLyceum/pyro)** | [Try it](https://openlyceum.github.io/pyro/) | Browser-based VPython editor |
-
-### Hardware — CD48 coincidence counter
-
-| Repo | Language | What it is |
-| --- | --- | --- |
-| **[jscd48](https://github.com/OpenLyceum/jscd48)** | JavaScript | Web Serial control (browser) |
-| **[tscd48](https://github.com/OpenLyceum/tscd48)** | TypeScript | Typed library |
-| **[pycd48](https://github.com/OpenLyceum/pycd48)** | Python | USB serial DAQ and automation |
 
 ### Template
 
