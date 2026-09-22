@@ -1,6 +1,6 @@
 <!--
   Org profile — shown on https://github.com/OpenLyceum
-  When adding a sim (see Baton/doc/add-simulation.md):
+  When adding a sim (see doc/add-simulation.md in the orchestration repo):
     1. Bump the **N** in the badge / “N simulations” line below
     2. Add one table row under NAAP, PhET, or Original (match repos.json lineage)
   The featured strip is optional chrome — leave it alone unless you want a new highlight.
@@ -22,7 +22,7 @@ Open-source [SceneryStack](https://scenerystack.org/) simulations — NAAP astro
 
 <br />
 
-![37 simulations](https://img.shields.io/badge/37-simulations-0f2744?style=flat-square)
+![42 simulations](https://img.shields.io/badge/42-simulations-0f2744?style=flat-square)
 ![SceneryStack](https://img.shields.io/badge/SceneryStack-TypeScript-1a4a7a?style=flat-square)
 ![Vite](https://img.shields.io/badge/build-Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![License](https://img.shields.io/badge/license-AGPL--3.0-2d6a4f?style=flat-square)
@@ -65,6 +65,7 @@ Modern SceneryStack rebuilds of [PhET Interactive Simulations](https://phet.colo
 | Simulation | Live | Focus |
 | --- | --- | --- |
 | **[Electric Field of Dreams](https://github.com/OpenLyceum/ElectricFieldOfDreams)** | [Try it](https://openlyceum.github.io/ElectricFieldOfDreams/) | Coulomb forces and uniform external fields |
+| **[Fluid Pressure and Flow](https://github.com/OpenLyceum/FluidPressureAndFlow)** | [Try it](https://openlyceum.github.io/FluidPressureAndFlow/) | Hydrostatic pressure, Bernoulli flow, and water tower |
 | **[Lady Bug](https://github.com/OpenLyceum/LadyBug)** | [Try it](https://openlyceum.github.io/LadyBug/) | 2D motion, position, velocity, acceleration |
 | **[Lunar Lander](https://github.com/OpenLyceum/LunarLander)** | [Try it](https://openlyceum.github.io/LunarLander/) | Thrust, tilt, and landing dynamics |
 | **[Maze Game](https://github.com/OpenLyceum/MazeGame)** | [Try it](https://openlyceum.github.io/MazeGame/) | Tile-based kinematics challenge |
@@ -79,6 +80,7 @@ Optics, quantum circuits, resonance, Earth science, motion analysis, and more.
 | Simulation | Live | Focus |
 | --- | --- | --- |
 | **[AC Phasor](https://github.com/OpenLyceum/ACPhasor)** | [Try it](https://openlyceum.github.io/ACPhasor/) | RLC phasors, impedance, resonance, and AC power |
+| **[Capacitor Lab](https://github.com/OpenLyceum/CapacitorLab)** | [Try it](https://openlyceum.github.io/CapacitorLab/) | Plate area, separation, dielectrics, and series/parallel networks |
 | **[Carnot Heat Engine](https://github.com/OpenLyceum/CarnotHeatEngine)** | [Try it](https://openlyceum.github.io/CarnotHeatEngine/) | Carnot cycle: PV/TS diagrams, efficiency, refrigerator & heat pump |
 | **[Crystal Lattice](https://github.com/OpenLyceum/CrystalLattice)** | [Try it](https://openlyceum.github.io/CrystalLattice/) | Bravais lattices, cubic cells, close packing, Miller indices, quasicrystals |
 | **[Doppler Effect](https://github.com/OpenLyceum/DopplerEffect)** | [Try it](https://openlyceum.github.io/DopplerEffect/) | Sound waves and relative motion |
@@ -87,12 +89,15 @@ Optics, quantum circuits, resonance, Earth science, motion analysis, and more.
 | **[Heat Transfer](https://github.com/OpenLyceum/HeatTransfer)** | [Try it](https://openlyceum.github.io/HeatTransfer/) | WebGPU heat field: conduction, convection, transport, and materials |
 | **[Interferometry Lab](https://github.com/OpenLyceum/InterferometryLab)** | [Try it](https://openlyceum.github.io/InterferometryLab/) | Michelson, Mach-Zehnder, and Fabry-Perot interferometers |
 | **[Light Propagation](https://github.com/OpenLyceum/LightPropagation)** | [Try it](https://openlyceum.github.io/LightPropagation/) | Polarizers and wave plates |
+| **[Motion Match](https://github.com/OpenLyceum/MotionMatch)** | [Try it](https://openlyceum.github.io/MotionMatch/) | Match position/velocity graphs with pointer or PASCO motion sensor |
+| **[Motion Sensor](https://github.com/OpenLyceum/MotionSensor)** | [Try it](https://openlyceum.github.io/MotionSensor/) | Record motion and plot position, velocity, acceleration |
 | **[Optics Lab](https://github.com/OpenLyceum/OpticsLab)** | [Try it](https://openlyceum.github.io/OpticsLab/) | Geometric optics and refraction |
 | **[Oscillations & Chaos](https://github.com/OpenLyceum/OscillationsAndChaos)** | [Try it](https://openlyceum.github.io/OscillationsAndChaos/) | Springs, pendulums, and chaos |
 | **[Oscilloscope](https://github.com/OpenLyceum/Oscilloscope)** | [Try it](https://openlyceum.github.io/Oscilloscope/) | Bench scope: function generator, mic, trigger, FFT |
 | **[Plate Tectonics](https://github.com/OpenLyceum/PlateTectonics)** | [Try it](https://openlyceum.github.io/PlateTectonics/) | Plate boundaries, earthquakes, volcanoes, cross-sections, and 50 Myr reconstruction |
 | **[Precession](https://github.com/OpenLyceum/Precession)** | [Try it](https://openlyceum.github.io/Precession/) | Rigid-body precession, nutation, and torque-free tumbling |
 | **[Qubit Sketch](https://github.com/OpenLyceum/QubitSketch)** | [Try it](https://openlyceum.github.io/QubitSketch/) | Drag-and-drop quantum circuits |
+| **[Radioactivity and Statistics](https://github.com/OpenLyceum/RadioactivityAndStatistics)** | [Try it](https://openlyceum.github.io/RadioactivityAndStatistics/) | Counting statistics with simulated or PASCO Geiger counter |
 | **[Resonance](https://github.com/OpenLyceum/Resonance)** | [Try it](https://openlyceum.github.io/Resonance/) | Driven oscillators and Chladni patterns |
 | **[Special Relativity](https://github.com/OpenLyceum/SpecialRelativity)** | [Try it](https://openlyceum.github.io/SpecialRelativity/) | Light clock, Minkowski spacetime diagrams, twin paradox, relativistic Doppler |
 | **[Standing Waves](https://github.com/OpenLyceum/StandingWaves)** | [Try it](https://openlyceum.github.io/StandingWaves/) | Longitudinal standing waves in pipes: reflection, phase, harmonics |
@@ -110,11 +115,11 @@ Optics, quantum circuits, resonance, Earth science, motion analysis, and more.
 | --- | --- | --- |
 | **[Almanach](https://github.com/OpenLyceum/Almanach)** | [Docs](https://openlyceum.github.io/Almanach/) | SceneryStack knowledge base (humans + LLMs) |
 | **[Baseline](https://github.com/OpenLyceum/Baseline)** | — | Upstream baselines and ground-truth snapshots |
-| **[Baton](https://github.com/OpenLyceum/Baton)** | [Index](https://openlyceum.github.io/Baton/) | Catalog, fleet automation, reusable CI |
+| **[Catalog & CI](https://github.com/OpenLyceum/Baton)** | [Index](https://openlyceum.github.io/Baton/) | Simulation catalog, fleet automation, reusable workflows |
 
 ### Template
 
-**[SceneryStackTemplate](https://github.com/OpenLyceum/SceneryStackTemplate)** — start a new accessible SceneryStack sim (one or N screens). See also [`Baton` create-sim](https://github.com/OpenLyceum/Baton/blob/main/doc/add-simulation.md).
+**[SceneryStackTemplate](https://github.com/OpenLyceum/SceneryStackTemplate)** — start a new accessible SceneryStack sim (one or N screens). See also [adding a simulation](https://github.com/OpenLyceum/Baton/blob/main/doc/add-simulation.md).
 
 ---
 

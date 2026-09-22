@@ -14,7 +14,7 @@ This document is the broad shared guide. For a single subsystem (colors, layout,
 |---|---|---|
 | SceneryStack | ^3.0.0 | Simulation framework (PhET-derived) |
 | Vite | ^8 | Build tool and dev server |
-| TypeScript | ^6 | `erasableSyntaxOnly` — no `enum` or `namespace` |
+| TypeScript | ^7 | `erasableSyntaxOnly` — no `enum` or `namespace` |
 | Biome | ^2.5 | Linting + formatting (not ESLint, not Prettier) |
 | vite-plugin-pwa | ^1 | PWA / offline / installable |
 
@@ -71,7 +71,7 @@ The full structural convention and per-sim checklist live in [Baton/CONVENTIONS.
 
 ## Coding conventions
 
-- **No `enum`** — use `const SomeEnum = { ... } as const` (TS6 `erasableSyntaxOnly`)
+- **No `enum`** — use `const SomeEnum = { ... } as const` (`erasableSyntaxOnly`)
 - **No `namespace`** — use modules or classes with static members
 - **`import type`** required for type-only imports (`verbatimModuleSyntax`)
 - **Formatter**: 2-space indent, 120-char line width, double quotes, always semicolons
@@ -224,7 +224,7 @@ npm run lint && npm run check && npm run build
 | `npm run icons` | Regenerate PWA icons from `public/icons/icon.svg` |
 | `npm run clean` | Remove `dist/` |
 
-## TypeScript 6 notes
+## TypeScript notes
 
 - `erasableSyntaxOnly` rejects `enum` and `namespace`
 - `verbatimModuleSyntax` requires explicit `import type` for type-only symbols
