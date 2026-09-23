@@ -13,7 +13,7 @@ not define their own.
 | Path | Purpose |
 |---|---|
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | Contribution guidelines (GitHub Flow, PR checklist, quality commands) |
-| [`CLAUDE.md`](CLAUDE.md) | General AI-assistant guide for all SceneryStack sim repos |
+| [`AGENTS.md`](AGENTS.md) | General AI-assistant guide for all SceneryStack sim repos |
 | [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) | Contributor Covenant v2.1 |
 | [`SECURITY.md`](SECURITY.md) | Security reporting via GitHub Security Advisories |
 | [`LICENSE`](LICENSE) | GNU Affero GPL v3 — org default for simulation repos |
@@ -33,7 +33,7 @@ repos that do not have their own copies:
 SceneryStack simulation repos should **not** duplicate `CONTRIBUTING.md` or `LICENSE` at the repo root;
 link to the org defaults instead (see any sim `README.md` **Contributing** section).
 
-Each sim repo keeps a **sim-specific** [`CLAUDE.md`](CLAUDE.md) at its root; shared SceneryStack conventions, bootstrap chain, module paths, and CI live in **this** org [`CLAUDE.md`](CLAUDE.md). Fleet structure and accessibility conventions live in [CONVENTIONS.md](https://github.com/OpenLyceum/Baton/blob/main/CONVENTIONS.md) and [ACCESSIBILITY.md](https://github.com/OpenLyceum/Baton/blob/main/ACCESSIBILITY.md). Do not add per-repo `AGENTS.md` — use `CLAUDE.md` instead.
+Each sim repo keeps a **sim-specific** [`AGENTS.md`](AGENTS.md) at its root; shared SceneryStack conventions, bootstrap chain, module paths, and CI live in **this** org [`AGENTS.md`](AGENTS.md). Fleet structure and accessibility conventions live in [CONVENTIONS.md](https://github.com/OpenLyceum/Baton/blob/main/CONVENTIONS.md) and [ACCESSIBILITY.md](https://github.com/OpenLyceum/Baton/blob/main/ACCESSIBILITY.md). Do not add per-repo `CLAUDE.md` — use `AGENTS.md` instead.
 
 ## Shared CI, automation, and catalog
 

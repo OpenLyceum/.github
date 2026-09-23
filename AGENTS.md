@@ -1,8 +1,8 @@
-# CLAUDE.md — OpenLyceum SceneryStack Simulations
+# AGENTS.md — OpenLyceum SceneryStack Simulations
 
 General guidance for AI assistants working on **any** OpenLyceum SceneryStack simulation repository.
 
-Each sim repo has its own `CLAUDE.md` with **sim-specific** context only (architecture, key files, physics, quirks). Read that file first, then use this document for shared conventions.
+Each sim repo has its own `AGENTS.md` with **sim-specific** context only (architecture, key files, physics, quirks). Read that file first, then use this document for shared conventions.
 
 Community files (contributing, license, issue templates) live in [OpenLyceum/.github](https://github.com/OpenLyceum/.github). Orchestration — reusable CI/CD workflows, the repo catalog, and the compliance audit — lives in [OpenLyceum/Baton](https://github.com/OpenLyceum/Baton). Simulation READMEs follow a fixed six-section outline enforced by Baton's compliance check.
 
@@ -18,7 +18,7 @@ This document is the broad shared guide. For a single subsystem (colors, layout,
 | Biome | ^2.5 | Linting + formatting (not ESLint, not Prettier) |
 | vite-plugin-pwa | ^1 | PWA / offline / installable |
 
-Some sims add Vitest, Playwright, or OpenCV.js — see the sim's `CLAUDE.md` and `package.json`.
+Some sims add Vitest, Playwright, or OpenCV.js — see the sim's `AGENTS.md` and `package.json`.
 
 ## Bootstrap import chain
 
@@ -269,7 +269,7 @@ vitest.config.ts   ← include: ["tests/**/*.test.ts"]; setupFiles: ["./tests/se
 ```
 
 The vitest `environment` (`happy-dom` default, or `jsdom`/`node`) may vary per sim — document the
-choice in the sim's `CLAUDE.md`. See [Baton/CONVENTIONS.md §5](https://github.com/OpenLyceum/Baton/blob/main/CONVENTIONS.md).
+choice in the sim's `AGENTS.md`. See [Baton/CONVENTIONS.md §5](https://github.com/OpenLyceum/Baton/blob/main/CONVENTIONS.md).
 
 ## Git hooks
 
