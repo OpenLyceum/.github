@@ -22,7 +22,7 @@ Open-source [SceneryStack](https://scenerystack.org/) simulations — NAAP astro
 
 <br />
 
-![42 simulations](https://img.shields.io/badge/42-simulations-0f2744?style=flat-square)
+![44 simulations](https://img.shields.io/badge/44-simulations-0f2744?style=flat-square)
 ![SceneryStack](https://img.shields.io/badge/SceneryStack-TypeScript-1a4a7a?style=flat-square)
 ![Vite](https://img.shields.io/badge/build-Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![License](https://img.shields.io/badge/license-AGPL--3.0-2d6a4f?style=flat-square)
@@ -89,6 +89,7 @@ Optics, quantum circuits, resonance, Earth science, motion analysis, and more.
 | **[Heat Transfer](https://github.com/OpenLyceum/HeatTransfer)** | [Try it](https://openlyceum.github.io/HeatTransfer/) | WebGPU heat field: conduction, convection, transport, and materials |
 | **[Interferometry Lab](https://github.com/OpenLyceum/InterferometryLab)** | [Try it](https://openlyceum.github.io/InterferometryLab/) | Michelson, Mach-Zehnder, and Fabry-Perot interferometers |
 | **[Light Propagation](https://github.com/OpenLyceum/LightPropagation)** | [Try it](https://openlyceum.github.io/LightPropagation/) | Polarizers and wave plates |
+| **[Mercury Elongations](https://github.com/OpenLyceum/MercuryElongations)** | [Try it](https://openlyceum.github.io/MercuryElongations/) | Synchronized planetarium and orbital views of Mercury's elongation |
 | **[Motion Match](https://github.com/OpenLyceum/MotionMatch)** | [Try it](https://openlyceum.github.io/MotionMatch/) | Match position/velocity graphs with pointer or PASCO motion sensor |
 | **[Motion Sensor](https://github.com/OpenLyceum/MotionSensor)** | [Try it](https://openlyceum.github.io/MotionSensor/) | Record motion and plot position, velocity, acceleration |
 | **[Optics Lab](https://github.com/OpenLyceum/OpticsLab)** | [Try it](https://openlyceum.github.io/OpticsLab/) | Geometric optics and refraction |
@@ -96,6 +97,7 @@ Optics, quantum circuits, resonance, Earth science, motion analysis, and more.
 | **[Oscilloscope](https://github.com/OpenLyceum/Oscilloscope)** | [Try it](https://openlyceum.github.io/Oscilloscope/) | Bench scope: function generator, mic, trigger, FFT |
 | **[Plate Tectonics](https://github.com/OpenLyceum/PlateTectonics)** | [Try it](https://openlyceum.github.io/PlateTectonics/) | Plate boundaries, earthquakes, volcanoes, cross-sections, and 50 Myr reconstruction |
 | **[Precession](https://github.com/OpenLyceum/Precession)** | [Try it](https://openlyceum.github.io/Precession/) | Rigid-body precession, nutation, and torque-free tumbling |
+| **[Quantum Potential](https://github.com/OpenLyceum/QuantumPotential)** | [Try it](https://openlyceum.github.io/QuantumPotential/) | Bound states in potential wells; real-time 1D Schrödinger equation |
 | **[Qubit Sketch](https://github.com/OpenLyceum/QubitSketch)** | [Try it](https://openlyceum.github.io/QubitSketch/) | Drag-and-drop quantum circuits |
 | **[Radioactivity and Statistics](https://github.com/OpenLyceum/RadioactivityAndStatistics)** | [Try it](https://openlyceum.github.io/RadioactivityAndStatistics/) | Counting statistics with simulated or PASCO Geiger counter |
 | **[Resonance](https://github.com/OpenLyceum/Resonance)** | [Try it](https://openlyceum.github.io/Resonance/) | Driven oscillators and Chladni patterns |
