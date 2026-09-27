@@ -17,8 +17,10 @@ This document is the broad shared guide. For a single subsystem (colors, layout,
 | TypeScript | ^7 | `erasableSyntaxOnly` — no `enum` or `namespace` |
 | Biome | ^2.5 | Linting + formatting (not ESLint, not Prettier) |
 | vite-plugin-pwa | ^1 | PWA / offline / installable |
+| Vitest | ^5 | Unit tests on `happy-dom` (`tests/`) |
+| Playwright | ^1 | Fuzz smoke (`tests/fuzz/`) and optional browser specs (`tests/browser/`) |
 
-Some sims add Vitest, Playwright, or OpenCV.js — see the sim's `AGENTS.md` and `package.json`.
+Some sims add OpenCV.js, astronomy-engine, KaTeX, … — see the sim's `AGENTS.md` and `package.json`.
 
 ## Bootstrap import chain
 
@@ -57,7 +59,9 @@ src/
     *Screen.ts
     model/   ← state, physics, step(dt), reset()
     view/    ← Scenery nodes, layout, input
-scripts/generate-icons.ts
+scripts/generate-icons.ts  test-fuzz.ts
+tests/
+  setup.ts  memory-leak.test.ts  helpers/memoryLeak.ts  fuzz/fuzz.spec.ts
 public/
   favicon.ico
   icons/icon.svg  icon-192.png  icon-512.png  apple-touch-icon.png
@@ -66,6 +70,17 @@ public/
 ```
 
 Multi-screen sims add one folder per screen (e.g. `composer-screen/`, `single-oscillator/`). Shared code often lives in `src/common/`. There is no top-level `src/model/` or `src/view/` — those live inside a screen folder.
+
+### Template-owned files
+
+Configs, workflows, hooks, `tests/setup.ts`, the fuzz runner/spec/config, the leak harness,
+`scripts/generate-icons.ts` and the bootstrap `assert`/`brand`/`splash` files are **owned by
+SceneryStackTemplate** and must match it (after the sim-name substitution). The list is
+[Baton/config/template-manifest.json](https://github.com/OpenLyceum/Baton/blob/main/config/template-manifest.json);
+`Baton/scripts/check-template-drift.sh <Sim>` reports drift and `--fix` copies the template
+version. Change such a file **in the template first**, then propagate — never edit it in one sim.
+A deliberate deviation is an explicit bullet under the sim's `AGENTS.md` →
+`## Compliance carve-outs`: ``- `path/or-script`: reason`` (or a `**Template drift**` bullet naming it).
 
 The full structural convention and per-sim checklist live in [Baton/CONVENTIONS.md](https://github.com/OpenLyceum/Baton/blob/main/CONVENTIONS.md) (the structural companion to [Baton/ACCESSIBILITY.md](https://github.com/OpenLyceum/Baton/blob/main/ACCESSIBILITY.md)), enforced by Baton's compliance check.
 
@@ -206,10 +221,10 @@ Add a11y strings under an `a11y` key in every locale JSON and expose them via
 
 ## Common commands
 
-Run before opening a PR (add `npm test` when the sim defines it):
+Run before opening a PR:
 
 ```bash
-npm run lint && npm run check && npm run build
+npm run lint && npm run check && npm test && npm run build && npm run test:fuzz:quick
 ```
 
 | Command | Description |
@@ -221,7 +236,10 @@ npm run lint && npm run check && npm run build
 | `npm run lint` | Biome check |
 | `npm run format` | Biome format |
 | `npm run fix` | Biome check --write |
+| `npm test` | Vitest unit tests (includes the memory-leak suite) |
+| `npm run test:fuzz` / `:quick` / `:long` | Playwright fuzz smoke — pointer + keyboard, `?ea` — 30 s / 10 s / 300 s |
 | `npm run icons` | Regenerate PWA icons from `public/icons/icon.svg` |
+| `npm run release` | check + lint + build + test, then `npm version patch` and push tags |
 | `npm run clean` | Remove `dist/` |
 
 ## TypeScript notes
@@ -238,7 +256,10 @@ Each sim's `.github/workflows/ci.yml` calls the reusable workflow:
 uses: OpenLyceum/Baton/.github/workflows/ci.yml@main
 ```
 
-On push/PR to `main`: `npm run check`, `npm run lint`, `npm run icons && npm run build`.
+On push/PR to `main`: `npm ci`, a security audit of direct dependencies, `npm run lint`,
+`npm run check`, `npm test`, `npm run build`, plus Baton's compliance check (and an advisory
+template-drift check), dependency review and CodeQL. Baton's weekly `fleet-health` additionally
+runs `npm run test:fuzz:quick` for every sim.
 
 Each sim's `.github/workflows/deploy.yml` calls the reusable Pages deploy and must allow
 `workflow_dispatch` (publish without a push, same pair of triggers as Baton's `pages.yml`):
@@ -250,11 +271,13 @@ on:
   workflow_dispatch:
 ```
 
-## Unit tests (when present)
+## Unit tests
 
-Tests are optional, but when a sim has them they live in a **root `tests/` folder** (mirroring
-the source tree), with `tests/setup.ts` and a root `vitest.config.ts` — never co-located next to
-source and never in `__tests__/` directories. This matches `SceneryStackTemplate`.
+Every sim has them, in a **root `tests/` folder** (mirroring the source tree), with the
+template's `tests/setup.ts` and `vitest.config.ts` (`happy-dom`) — never co-located next to
+source and never in `__tests__/` directories. `tests/memory-leak.test.ts` passes the sim's
+disposable objects to `describeDisposalLeaks()` from the template-owned
+`tests/helpers/memoryLeak.ts`.
 
 ```typescript
 import { describe, it, expect, beforeEach } from "vitest";
@@ -264,12 +287,12 @@ import { describe, it, expect, beforeEach } from "vitest";
 tests/
   setup.ts
   **/*.test.ts     ← unit tests
-  **/*.spec.ts     ← Playwright specs, if any
+  fuzz/fuzz.spec.ts  ← template-owned fuzz smoke (npm run test:fuzz)
+  browser/*.spec.ts  ← optional sim-specific Playwright specs
 vitest.config.ts   ← include: ["tests/**/*.test.ts"]; setupFiles: ["./tests/setup.ts"]
 ```
 
-The vitest `environment` (`happy-dom` default, or `jsdom`/`node`) may vary per sim — document the
-choice in the sim's `AGENTS.md`. See [Baton/CONVENTIONS.md §5](https://github.com/OpenLyceum/Baton/blob/main/CONVENTIONS.md).
+See [Baton/CONVENTIONS.md §5](https://github.com/OpenLyceum/Baton/blob/main/CONVENTIONS.md).
 
 ## Git hooks
 
