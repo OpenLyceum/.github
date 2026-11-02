@@ -15,12 +15,12 @@ This document is the broad shared guide. For a single subsystem (colors, layout,
 | SceneryStack | ^3.0.0 | Simulation framework (PhET-derived) |
 | Vite | ^8 | Build tool and dev server |
 | TypeScript | ^7 | `erasableSyntaxOnly` — no `enum` or `namespace` |
-| Biome | ^2.5 | Linting + formatting (not ESLint, not Prettier) |
-| vite-plugin-pwa | ^1 | PWA / offline / installable |
+| Biome | ^2 | Linting + formatting (not ESLint, not Prettier) |
+| vite-plugin-pwa | ^2 | PWA / offline / installable |
 | Vitest | ^5 | Unit tests on `happy-dom` (`tests/`) |
 | Playwright | ^1 | Fuzz smoke (`tests/fuzz/`) and optional browser specs (`tests/browser/`) |
 
-Some sims add OpenCV.js, astronomy-engine, KaTeX, … — see the sim's `AGENTS.md` and `package.json`.
+Some sims add OpenCV.js, astronomy-engine, KaTeX, … — see the sim's `AGENTS.md` and `package.json`. Exact versions are pinned in `SceneryStackTemplate/package.json`. The shared `overrides` (`lodash`, `three`, `brace-expansion`) are explained in that repo's `AGENTS.md`; a sim's `AGENTS.md` mentions an override only when its pin differs.
 
 ## Bootstrap import chain
 
