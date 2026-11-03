@@ -13,7 +13,7 @@ We use [GitHub Flow](https://guides.github.com/introduction/flow/):
 
 ## Development checks
 
-SceneryStack simulation repositories require **Node 24** or newer. Run these before opening a PR:
+SceneryStack simulation repositories require **Node 26** or newer. Run these before opening a PR:
 
 ```bash
 npm install
