@@ -22,7 +22,7 @@ Open-source [SceneryStack](https://scenerystack.org/) simulations — NAAP astro
 
 <br />
 
-![44 simulations](https://img.shields.io/badge/44-simulations-0f2744?style=flat-square)
+![57 simulations](https://img.shields.io/badge/57-simulations-0f2744?style=flat-square)
 ![SceneryStack](https://img.shields.io/badge/SceneryStack-TypeScript-1a4a7a?style=flat-square)
 ![Vite](https://img.shields.io/badge/build-Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![License](https://img.shields.io/badge/license-AGPL--3.0-2d6a4f?style=flat-square)
@@ -84,6 +84,7 @@ Optics, quantum circuits, resonance, Earth science, motion analysis, and more.
 | **[Carnot Heat Engine](https://github.com/OpenLyceum/CarnotHeatEngine)** | [Try it](https://openlyceum.github.io/CarnotHeatEngine/) | Carnot cycle: PV/TS diagrams, efficiency, refrigerator & heat pump |
 | **[Crystal Lattice](https://github.com/OpenLyceum/CrystalLattice)** | [Try it](https://openlyceum.github.io/CrystalLattice/) | Bravais lattices, cubic cells, close packing, Miller indices, quasicrystals |
 | **[Doppler Effect](https://github.com/OpenLyceum/DopplerEffect)** | [Try it](https://openlyceum.github.io/DopplerEffect/) | Sound waves and relative motion |
+| **[Electron Configuration](https://github.com/OpenLyceum/ElectronConfiguration)** | [Try it](https://openlyceum.github.io/ElectronConfiguration/) | Orbital diagrams, periodic configurations, common ions, and detective challenges |
 | **[Field Boundary](https://github.com/OpenLyceum/FieldBoundary)** | [Try it](https://openlyceum.github.io/FieldBoundary/) | Maxwell boundary conditions for E/D and B/H at a planar interface |
 | **[Fluid Dynamics](https://github.com/OpenLyceum/FluidDynamics)** | [Try it](https://openlyceum.github.io/FluidDynamics/) | Intro and Lab screens for interactive fluid flow |
 | **[Heat Transfer](https://github.com/OpenLyceum/HeatTransfer)** | [Try it](https://openlyceum.github.io/HeatTransfer/) | WebGPU heat field: conduction, convection, transport, and materials |
