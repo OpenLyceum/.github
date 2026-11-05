@@ -22,7 +22,7 @@ Open-source [SceneryStack](https://scenerystack.org/) simulations — NAAP astro
 
 <br />
 
-![58 simulations](https://img.shields.io/badge/58-simulations-0f2744?style=flat-square)
+![59 simulations](https://img.shields.io/badge/59-simulations-0f2744?style=flat-square)
 ![SceneryStack](https://img.shields.io/badge/SceneryStack-TypeScript-1a4a7a?style=flat-square)
 ![Vite](https://img.shields.io/badge/build-Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![License](https://img.shields.io/badge/license-AGPL--3.0-2d6a4f?style=flat-square)
@@ -107,6 +107,7 @@ Optics, quantum circuits, resonance, Earth science, motion analysis, and more.
 | **[Stellar Wobble](https://github.com/OpenLyceum/StellarWobble)** | [Try it](https://openlyceum.github.io/StellarWobble/) | Exoplanets by radial velocity: Doppler-shifted lines, the star's wobble, viewing angle, fitting data |
 | **[Stern–Gerlach](https://github.com/OpenLyceum/SternGerlach)** | [Try it](https://openlyceum.github.io/SternGerlach/) | Spin analyzers and quantum spin projections |
 | **[Track Lab](https://github.com/OpenLyceum/TrackLab)** | [Try it](https://openlyceum.github.io/TrackLab/) | Video motion analysis and object tracking |
+| **[Transit Hunter](https://github.com/OpenLyceum/TransitHunter)** | [Try it](https://openlyceum.github.io/TransitHunter/) | Exoplanets by transits: dimming starlight, alignment, light curves, real Kepler and TESS data, planet densities |
 | **[Vernier Scales](https://github.com/OpenLyceum/VernierScales)** | [Try it](https://openlyceum.github.io/VernierScales/) | Vernier calipers, micrometers, and reading practice |
 | **[Wave Composer](https://github.com/OpenLyceum/WaveComposer)** | [Try it](https://openlyceum.github.io/WaveComposer/) | Live voice analysis and composition |
 | **[Zenith](https://github.com/OpenLyceum/Zenith)** | [Try it](https://openlyceum.github.io/Zenith/) | Planetarium sky from latitude, longitude, LST |
