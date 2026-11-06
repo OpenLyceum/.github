@@ -22,7 +22,7 @@ Open-source [SceneryStack](https://scenerystack.org/) simulations — NAAP astro
 
 <br />
 
-![60 simulations](https://img.shields.io/badge/60-simulations-0f2744?style=flat-square)
+![61 simulations](https://img.shields.io/badge/61-simulations-0f2744?style=flat-square)
 ![SceneryStack](https://img.shields.io/badge/SceneryStack-TypeScript-1a4a7a?style=flat-square)
 ![Vite](https://img.shields.io/badge/build-Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![License](https://img.shields.io/badge/license-AGPL--3.0-2d6a4f?style=flat-square)
@@ -88,6 +88,7 @@ Optics, quantum circuits, resonance, Earth science, motion analysis, and more.
 | **[Exoplanets Database](https://github.com/OpenLyceum/ExoplanetsDatabase)** | [Try it](https://openlyceum.github.io/ExoplanetsDatabase/) | The NASA Exoplanet Archive made friendly: counts, a filterable table, preset plots by discovery method |
 | **[Field Boundary](https://github.com/OpenLyceum/FieldBoundary)** | [Try it](https://openlyceum.github.io/FieldBoundary/) | Maxwell boundary conditions for E/D and B/H at a planar interface |
 | **[Fluid Dynamics](https://github.com/OpenLyceum/FluidDynamics)** | [Try it](https://openlyceum.github.io/FluidDynamics/) | Intro and Lab screens for interactive fluid flow |
+| **[Habitability Lab](https://github.com/OpenLyceum/HabitabilityLab)** | [Try it](https://openlyceum.github.io/HabitabilityLab/) | Exoplanet habitability: energy balance, greenhouse and water, habitable-zone edges with real planets, an aging star, atmospheric escape |
 | **[Heat Transfer](https://github.com/OpenLyceum/HeatTransfer)** | [Try it](https://openlyceum.github.io/HeatTransfer/) | WebGPU heat field: conduction, convection, transport, and materials |
 | **[Interferometry Lab](https://github.com/OpenLyceum/InterferometryLab)** | [Try it](https://openlyceum.github.io/InterferometryLab/) | Michelson, Mach-Zehnder, and Fabry-Perot interferometers |
 | **[Light Propagation](https://github.com/OpenLyceum/LightPropagation)** | [Try it](https://openlyceum.github.io/LightPropagation/) | Polarizers and wave plates |
