@@ -22,7 +22,7 @@ Open-source [SceneryStack](https://scenerystack.org/) simulations — NAAP astro
 
 <br />
 
-![62 simulations](https://img.shields.io/badge/62-simulations-0f2744?style=flat-square)
+![63 simulations](https://img.shields.io/badge/63-simulations-0f2744?style=flat-square)
 ![SceneryStack](https://img.shields.io/badge/SceneryStack-TypeScript-1a4a7a?style=flat-square)
 ![Vite](https://img.shields.io/badge/build-Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![License](https://img.shields.io/badge/license-AGPL--3.0-2d6a4f?style=flat-square)
@@ -98,6 +98,7 @@ Optics, quantum circuits, resonance, Earth science, motion analysis, and more.
 | **[Optics Lab](https://github.com/OpenLyceum/OpticsLab)** | [Try it](https://openlyceum.github.io/OpticsLab/) | Geometric optics and refraction |
 | **[Oscillations & Chaos](https://github.com/OpenLyceum/OscillationsAndChaos)** | [Try it](https://openlyceum.github.io/OscillationsAndChaos/) | Springs, pendulums, and chaos |
 | **[Oscilloscope](https://github.com/OpenLyceum/Oscilloscope)** | [Try it](https://openlyceum.github.io/Oscilloscope/) | Bench scope: function generator, mic, trigger, FFT |
+| **[Photon Interactions](https://github.com/OpenLyceum/PhotonInteractions)** | [Try it](https://openlyceum.github.io/PhotonInteractions/) | Compton scattering, X-ray tube spectra, pair production, and annihilation |
 | **[Planetary Configurations](https://github.com/OpenLyceum/PlanetaryConfigurations)** | [Try it](https://openlyceum.github.io/PlanetaryConfigurations/) | Elongations, synodic and sidereal periods, retrograde motion, and Ptolemy's epicycles for the NAAP Solar System Models lab |
 | **[Plate Tectonics](https://github.com/OpenLyceum/PlateTectonics)** | [Try it](https://openlyceum.github.io/PlateTectonics/) | Plate boundaries, earthquakes, volcanoes, cross-sections, and 50 Myr reconstruction |
 | **[Precession](https://github.com/OpenLyceum/Precession)** | [Try it](https://openlyceum.github.io/Precession/) | Rigid-body precession, nutation, and torque-free tumbling |
