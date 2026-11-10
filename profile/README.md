@@ -22,7 +22,7 @@ Open-source [SceneryStack](https://scenerystack.org/) simulations — NAAP astro
 
 <br />
 
-![63 simulations](https://img.shields.io/badge/63-simulations-0f2744?style=flat-square)
+![64 simulations](https://img.shields.io/badge/64-simulations-0f2744?style=flat-square)
 ![SceneryStack](https://img.shields.io/badge/SceneryStack-TypeScript-1a4a7a?style=flat-square)
 ![Vite](https://img.shields.io/badge/build-Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![License](https://img.shields.io/badge/license-AGPL--3.0-2d6a4f?style=flat-square)
@@ -80,6 +80,7 @@ Optics, quantum circuits, resonance, Earth science, motion analysis, and more.
 | Simulation | Live | Focus |
 | --- | --- | --- |
 | **[AC Phasor](https://github.com/OpenLyceum/ACPhasor)** | [Try it](https://openlyceum.github.io/ACPhasor/) | RLC phasors, impedance, resonance, and AC power |
+| **[Backward Acceleration](https://github.com/OpenLyceum/BackwardAcceleration)** | [Try it](https://openlyceum.github.io/BackwardAcceleration/) | Predict and measure v–t and a–t graphs of a cart on a ramp — virtual or a real PASCO Smart Cart |
 | **[Capacitor Lab](https://github.com/OpenLyceum/CapacitorLab)** | [Try it](https://openlyceum.github.io/CapacitorLab/) | Plate area, separation, dielectrics, and series/parallel networks |
 | **[Carnot Heat Engine](https://github.com/OpenLyceum/CarnotHeatEngine)** | [Try it](https://openlyceum.github.io/CarnotHeatEngine/) | Carnot cycle: PV/TS diagrams, efficiency, refrigerator & heat pump |
 | **[Crystal Lattice](https://github.com/OpenLyceum/CrystalLattice)** | [Try it](https://openlyceum.github.io/CrystalLattice/) | Bravais lattices, cubic cells, close packing, Miller indices, quasicrystals |
