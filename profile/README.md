@@ -22,7 +22,7 @@ Open-source [SceneryStack](https://scenerystack.org/) simulations — NAAP astro
 
 <br />
 
-![66 simulations](https://img.shields.io/badge/66-simulations-0f2744?style=flat-square)
+![67 simulations](https://img.shields.io/badge/67-simulations-0f2744?style=flat-square)
 ![SceneryStack](https://img.shields.io/badge/SceneryStack-TypeScript-1a4a7a?style=flat-square)
 ![Vite](https://img.shields.io/badge/build-Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![License](https://img.shields.io/badge/license-AGPL--3.0-2d6a4f?style=flat-square)
@@ -94,6 +94,7 @@ Optics, quantum circuits, resonance, Earth science, motion analysis, and more.
 | **[Fluid Dynamics](https://github.com/OpenLyceum/FluidDynamics)** | [Try it](https://openlyceum.github.io/FluidDynamics/) | Intro and Lab screens for interactive fluid flow |
 | **[Habitability Lab](https://github.com/OpenLyceum/HabitabilityLab)** | [Try it](https://openlyceum.github.io/HabitabilityLab/) | Exoplanet habitability: energy balance, greenhouse and water, habitable-zone edges with real planets, an aging star, atmospheric escape |
 | **[Heat Transfer](https://github.com/OpenLyceum/HeatTransfer)** | [Try it](https://openlyceum.github.io/HeatTransfer/) | WebGPU heat field: conduction, convection, transport, and materials |
+| **[HR Diagram](https://github.com/OpenLyceum/HRDiagram)** | [Try it](https://openlyceum.github.io/HRDiagram/) | Hertzsprung–Russell diagram of real Gaia and Hipparcos stars: radius from temperature and luminosity, nearest vs brightest stars, a census within 100 pc |
 | **[Interferometry Lab](https://github.com/OpenLyceum/InterferometryLab)** | [Try it](https://openlyceum.github.io/InterferometryLab/) | Michelson, Mach-Zehnder, and Fabry-Perot interferometers |
 | **[Light Propagation](https://github.com/OpenLyceum/LightPropagation)** | [Try it](https://openlyceum.github.io/LightPropagation/) | Polarizers and wave plates |
 | **[Mercury Elongations](https://github.com/OpenLyceum/MercuryElongations)** | [Try it](https://openlyceum.github.io/MercuryElongations/) | Synchronized planetarium and orbital views of Mercury's elongation |
