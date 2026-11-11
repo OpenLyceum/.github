@@ -22,7 +22,7 @@ Open-source [SceneryStack](https://scenerystack.org/) simulations — NAAP astro
 
 <br />
 
-![65 simulations](https://img.shields.io/badge/65-simulations-0f2744?style=flat-square)
+![66 simulations](https://img.shields.io/badge/66-simulations-0f2744?style=flat-square)
 ![SceneryStack](https://img.shields.io/badge/SceneryStack-TypeScript-1a4a7a?style=flat-square)
 ![Vite](https://img.shields.io/badge/build-Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![License](https://img.shields.io/badge/license-AGPL--3.0-2d6a4f?style=flat-square)
@@ -71,6 +71,7 @@ Modern SceneryStack rebuilds of [PhET Interactive Simulations](https://phet.colo
 | **[Maze Game](https://github.com/OpenLyceum/MazeGame)** | [Try it](https://openlyceum.github.io/MazeGame/) | Tile-based kinematics challenge |
 | **[Moving Man](https://github.com/OpenLyceum/MovingMan)** | [Try it](https://openlyceum.github.io/MovingMan/) | 1D kinematics with graphs |
 | **[Radio Waves](https://github.com/OpenLyceum/RadioWaves)** | [Try it](https://openlyceum.github.io/RadioWaves/) | EM radiation and antenna fields |
+| **[Simplified MRI](https://github.com/OpenLyceum/SimplifiedMRI)** | [Try it](https://openlyceum.github.io/SimplifiedMRI/) | NMR resonance, gradient slice selection in a head, and T1/T2 relaxation |
 | **[The Ramp](https://github.com/OpenLyceum/TheRamp)** | [Try it](https://openlyceum.github.io/TheRamp/) | Forces, friction, and energy on a ramp |
 
 ### Original — OpenLyceum labs
