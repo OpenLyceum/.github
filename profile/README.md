@@ -22,7 +22,7 @@ Open-source [SceneryStack](https://scenerystack.org/) simulations — NAAP astro
 
 <br />
 
-![64 simulations](https://img.shields.io/badge/64-simulations-0f2744?style=flat-square)
+![65 simulations](https://img.shields.io/badge/65-simulations-0f2744?style=flat-square)
 ![SceneryStack](https://img.shields.io/badge/SceneryStack-TypeScript-1a4a7a?style=flat-square)
 ![Vite](https://img.shields.io/badge/build-Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![License](https://img.shields.io/badge/license-AGPL--3.0-2d6a4f?style=flat-square)
@@ -84,6 +84,7 @@ Optics, quantum circuits, resonance, Earth science, motion analysis, and more.
 | **[Capacitor Lab](https://github.com/OpenLyceum/CapacitorLab)** | [Try it](https://openlyceum.github.io/CapacitorLab/) | Plate area, separation, dielectrics, and series/parallel networks |
 | **[Carnot Heat Engine](https://github.com/OpenLyceum/CarnotHeatEngine)** | [Try it](https://openlyceum.github.io/CarnotHeatEngine/) | Carnot cycle: PV/TS diagrams, efficiency, refrigerator & heat pump |
 | **[Crystal Lattice](https://github.com/OpenLyceum/CrystalLattice)** | [Try it](https://openlyceum.github.io/CrystalLattice/) | Bravais lattices, cubic cells, close packing, Miller indices, quasicrystals |
+| **[Diffraction Lab](https://github.com/OpenLyceum/DiffractionLab)** | [Try it](https://openlyceum.github.io/DiffractionLab/) | Fraunhofer diffraction: N-slit phasors, grating resolving power, the Airy disk and Rayleigh criterion, holography |
 | **[Doppler Effect](https://github.com/OpenLyceum/DopplerEffect)** | [Try it](https://openlyceum.github.io/DopplerEffect/) | Sound waves and relative motion |
 | **[Electron Configuration](https://github.com/OpenLyceum/ElectronConfiguration)** | [Try it](https://openlyceum.github.io/ElectronConfiguration/) | Orbital diagrams, periodic configurations, common ions, and detective challenges |
 | **[Exoplanets Database](https://github.com/OpenLyceum/ExoplanetsDatabase)** | [Try it](https://openlyceum.github.io/ExoplanetsDatabase/) | The NASA Exoplanet Archive made friendly: counts, a filterable table, preset plots by discovery method |
