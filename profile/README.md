@@ -22,7 +22,7 @@ Open-source [SceneryStack](https://scenerystack.org/) simulations — NAAP astro
 
 <br />
 
-![67 simulations](https://img.shields.io/badge/67-simulations-0f2744?style=flat-square)
+![72 simulations](https://img.shields.io/badge/72-simulations-0f2744?style=flat-square)
 ![SceneryStack](https://img.shields.io/badge/SceneryStack-TypeScript-1a4a7a?style=flat-square)
 ![Vite](https://img.shields.io/badge/build-Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![License](https://img.shields.io/badge/license-AGPL--3.0-2d6a4f?style=flat-square)
@@ -100,6 +100,7 @@ Optics, quantum circuits, resonance, Earth science, motion analysis, and more.
 | **[Mercury Elongations](https://github.com/OpenLyceum/MercuryElongations)** | [Try it](https://openlyceum.github.io/MercuryElongations/) | Synchronized planetarium and orbital views of Mercury's elongation |
 | **[Motion Match](https://github.com/OpenLyceum/MotionMatch)** | [Try it](https://openlyceum.github.io/MotionMatch/) | Match position/velocity graphs with pointer or PASCO motion sensor |
 | **[Motion Sensor](https://github.com/OpenLyceum/MotionSensor)** | [Try it](https://openlyceum.github.io/MotionSensor/) | Record motion and plot position, velocity, acceleration |
+| **[Nuclide Chart](https://github.com/OpenLyceum/NuclideChart)** | [Try it](https://openlyceum.github.io/NuclideChart/) | Nuclear binding energies, magic numbers, isobars, half-lives, and decay chains |
 | **[Optics Lab](https://github.com/OpenLyceum/OpticsLab)** | [Try it](https://openlyceum.github.io/OpticsLab/) | Geometric optics and refraction |
 | **[Oscillations & Chaos](https://github.com/OpenLyceum/OscillationsAndChaos)** | [Try it](https://openlyceum.github.io/OscillationsAndChaos/) | Springs, pendulums, and chaos |
 | **[Oscilloscope](https://github.com/OpenLyceum/Oscilloscope)** | [Try it](https://openlyceum.github.io/Oscilloscope/) | Bench scope: function generator, mic, trigger, FFT |
