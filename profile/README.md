@@ -22,7 +22,7 @@ Open-source [SceneryStack](https://scenerystack.org/) simulations — NAAP astro
 
 <br />
 
-![72 simulations](https://img.shields.io/badge/72-simulations-0f2744?style=flat-square)
+![73 simulations](https://img.shields.io/badge/73-simulations-0f2744?style=flat-square)
 ![SceneryStack](https://img.shields.io/badge/SceneryStack-TypeScript-1a4a7a?style=flat-square)
 ![Vite](https://img.shields.io/badge/build-Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![License](https://img.shields.io/badge/license-AGPL--3.0-2d6a4f?style=flat-square)
@@ -67,6 +67,7 @@ Modern SceneryStack rebuilds of [PhET Interactive Simulations](https://phet.colo
 | **[Electric Field of Dreams](https://github.com/OpenLyceum/ElectricFieldOfDreams)** | [Try it](https://openlyceum.github.io/ElectricFieldOfDreams/) | Coulomb forces and uniform external fields |
 | **[Fluid Pressure and Flow](https://github.com/OpenLyceum/FluidPressureAndFlow)** | [Try it](https://openlyceum.github.io/FluidPressureAndFlow/) | Hydrostatic pressure, Bernoulli flow, and water tower |
 | **[Lady Bug](https://github.com/OpenLyceum/LadyBug)** | [Try it](https://openlyceum.github.io/LadyBug/) | 2D motion, position, velocity, acceleration |
+| **[Lasers](https://github.com/OpenLyceum/Lasers)** | [Try it](https://openlyceum.github.io/Lasers/) | Absorption, stimulated emission, optical pumping, and laser operation |
 | **[Lunar Lander](https://github.com/OpenLyceum/LunarLander)** | [Try it](https://openlyceum.github.io/LunarLander/) | Thrust, tilt, and landing dynamics |
 | **[Maze Game](https://github.com/OpenLyceum/MazeGame)** | [Try it](https://openlyceum.github.io/MazeGame/) | Tile-based kinematics challenge |
 | **[Moving Man](https://github.com/OpenLyceum/MovingMan)** | [Try it](https://openlyceum.github.io/MovingMan/) | 1D kinematics with graphs |
