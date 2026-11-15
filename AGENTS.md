@@ -235,27 +235,30 @@ npm run lint && npm run check && npm test && npm run build && npm run test:fuzz:
 | `npm run check` | TypeScript (`tsc --noEmit` on app, scripts, and tests) |
 | `npm run lint` | Biome check |
 | `npm run check:unused` / `npm run knip` | Manual unused-file, export, and dependency report |
-| `npm run check:architecture` | Manual dependency-cruiser layer and cycle report on `src/` |
+| `npm run check:architecture` | Dependency-cruiser layer and cycle checks on `src/` |
+| `npm run test:architecture` | Architecture rule CLI regression fixtures |
 | `npm run format` | Biome format |
 | `npm run fix` | Biome check --write |
 | `npm test` | Vitest unit tests (includes the memory-leak suite) |
 | `npm run test:fuzz` / `:quick` / `:long` | Playwright fuzz smoke — pointer + keyboard, `?ea` — 30 s / 10 s / 300 s |
 | `npm run icons` | Regenerate PWA icons from `public/icons/icon.svg` |
-| `npm run release` | check + lint + build + test, then `npm version patch` and push tags |
+| `npm run release` | check + lint + architecture + build + test, then `npm version patch` and push tags |
 | `npm run clean` | Remove `dist/` |
 
-Knip (`check:unused`) and dependency-cruiser (`check:architecture`) are manual checks during
-adoption; findings are not enforced by CI or git hooks. Review reports before removing or
-rearranging code. The template owns `knip.json` and `.dependency-cruiser.cjs`; sims may extend
-knip entry/ignore fields and may add `.dependency-cruiser.local.cjs` for local excludes.
+Knip (`check:unused`) is a manual check during adoption. Architecture checks
+(`check:architecture`) are enforced across the SceneryStack fleet in pre-push, release
+and CI (`run-architecture: true` in the Baton reusable CI caller). When onboarding a new
+sim, keep the template config, regression fixtures, hook, package scripts and CI opt-in. The template owns `knip.json`, `.dependency-cruiser.cjs` and
+`tests/architecture.test.mjs`.
+
+Architecture rules reject model→view imports (including through helpers), shared→screen
+imports, cross-screen imports, runtime cycles, unresolved or undeclared packages,
+browser→Node imports, app→tooling imports and app→bootstrap imports. Model value imports
+of `scenery`/`sun` are errors; type-only UI imports are allowed. Orphans are advisory.
+Local `.dependency-cruiser.local.cjs` overlays may add rules; excludes and rule omissions
+require explicit AGENTS carve-outs. Parser/resolver/traversal overrides are rejected.
 See [Baton/doc/knip.md](https://github.com/OpenLyceum/Baton/blob/main/doc/knip.md) and
 [Baton/doc/dependency-cruiser.md](https://github.com/OpenLyceum/Baton/blob/main/doc/dependency-cruiser.md).
-
-Architecture rules (see Baton/doc/dependency-cruiser.md): model must not import view or
-preferences view nodes; `common/` / `preferences/` / `i18n/` must not import screen packages;
-`assets/` must not import app code; screen packages must not import each other; `src/` must
-not import `tests/` or npm devDependencies; circular dependencies are prohibited. Warnings
-also cover model→`scenery`/`sun` value imports and orphan modules.
 
 ## TypeScript notes
 
@@ -316,7 +319,7 @@ All SceneryStack sims ship `.githooks/pre-commit` and `.githooks/pre-push`:
 | Hook | Action |
 |---|---|
 | **pre-commit** | `npm run fix` on staged `.ts`/`.js`/`.json`/`.html` files, then re-stage |
-| **pre-push** | `npm run lint` and `npm run check` |
+| **pre-push** | `npm run lint`, `npm run check`, plus `npm run check:architecture` |
 
 Hooks activate automatically on `npm install` via the `prepare` script (no-op outside a git repo):
 
