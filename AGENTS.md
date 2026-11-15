@@ -258,6 +258,10 @@ Architecture rules reject model→view imports (including through helpers), shar
 imports, cross-screen imports, runtime cycles, unresolved or undeclared packages,
 browser→Node imports, app→tooling imports and app→bootstrap imports. Model value imports
 of `scenery`/`sun` are errors; type-only UI imports are allowed. Orphans are errors.
+Models must not value-import `*Colors.ts`. Source modules must be reachable from `main.ts`
+(ambient declarations excepted); only the template keeps three explicit starter entry points.
+Browser resolution is enabled, duplicate dependency categories are errors, and installed
+package deprecations are warnings.
 Local `.dependency-cruiser.local.cjs` overlays may add rules; excludes and rule omissions
 require explicit AGENTS carve-outs. Parser/resolver/traversal overrides are rejected.
 See [Baton/doc/knip.md](https://github.com/OpenLyceum/Baton/blob/main/doc/knip.md) and
