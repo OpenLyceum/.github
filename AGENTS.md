@@ -234,6 +234,7 @@ npm run lint && npm run check && npm test && npm run build && npm run test:fuzz:
 | `npm run preview` | Preview production build |
 | `npm run check` | TypeScript (`tsc --noEmit` on app, scripts, and tests) |
 | `npm run lint` | Biome check |
+| `npm run knip` | Manual unused-file, export, and dependency report |
 | `npm run format` | Biome format |
 | `npm run fix` | Biome check --write |
 | `npm test` | Vitest unit tests (includes the memory-leak suite) |
@@ -241,6 +242,11 @@ npm run lint && npm run check && npm test && npm run build && npm run test:fuzz:
 | `npm run icons` | Regenerate PWA icons from `public/icons/icon.svg` |
 | `npm run release` | check + lint + build + test, then `npm version patch` and push tags |
 | `npm run clean` | Remove `dist/` |
+
+Knip is a manual check during adoption; findings are not enforced by CI or git hooks.
+Review reports before removing code, and configure genuinely independent entry points when
+needed. The template owns the base `knip.json`; sims may extend it for local tooling. See
+[Baton/doc/knip.md](https://github.com/OpenLyceum/Baton/blob/main/doc/knip.md).
 
 ## TypeScript notes
 
