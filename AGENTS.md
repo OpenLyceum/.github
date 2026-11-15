@@ -321,10 +321,12 @@ All SceneryStack sims ship `.githooks/pre-commit` and `.githooks/pre-push`:
 | **pre-commit** | `npm run fix` on staged `.ts`/`.js`/`.json`/`.html` files, then re-stage |
 | **pre-push** | `npm run lint`, `npm run check`, plus `npm run check:architecture` |
 
-Hooks activate automatically on `npm install` via the `prepare` script (no-op outside a git repo):
+Hooks activate automatically on `npm install` via the `prepare` script. Activation runs
+only at the current Git repository root; a source-only copy inside a parent repository
+must not change the parent's hook configuration:
 
 ```json
-"prepare": "git rev-parse --is-inside-work-tree >/dev/null 2>&1 && git config core.hooksPath .githooks || true"
+"prepare": "test \"$(git rev-parse --show-toplevel 2>/dev/null)\" = \"$PWD\" && git config core.hooksPath .githooks || true"
 ```
 
 To bypass hooks in an emergency: `git commit --no-verify` / `git push --no-verify`.
