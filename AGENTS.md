@@ -234,7 +234,8 @@ npm run lint && npm run check && npm test && npm run build && npm run test:fuzz:
 | `npm run preview` | Preview production build |
 | `npm run check` | TypeScript (`tsc --noEmit` on app, scripts, and tests) |
 | `npm run lint` | Biome check |
-| `npm run knip` | Manual unused-file, export, and dependency report |
+| `npm run check:unused` / `npm run knip` | Manual unused-file, export, and dependency report |
+| `npm run check:architecture` | Manual dependency-cruiser layer and cycle report on `src/` |
 | `npm run format` | Biome format |
 | `npm run fix` | Biome check --write |
 | `npm test` | Vitest unit tests (includes the memory-leak suite) |
@@ -243,10 +244,18 @@ npm run lint && npm run check && npm test && npm run build && npm run test:fuzz:
 | `npm run release` | check + lint + build + test, then `npm version patch` and push tags |
 | `npm run clean` | Remove `dist/` |
 
-Knip is a manual check during adoption; findings are not enforced by CI or git hooks.
-Review reports before removing code, and configure genuinely independent entry points when
-needed. The template owns the base `knip.json`; sims may extend it for local tooling. See
-[Baton/doc/knip.md](https://github.com/OpenLyceum/Baton/blob/main/doc/knip.md).
+Knip (`check:unused`) and dependency-cruiser (`check:architecture`) are manual checks during
+adoption; findings are not enforced by CI or git hooks. Review reports before removing or
+rearranging code. The template owns `knip.json` and `.dependency-cruiser.cjs`; sims may extend
+knip entry/ignore fields and may add `.dependency-cruiser.local.cjs` for local excludes.
+See [Baton/doc/knip.md](https://github.com/OpenLyceum/Baton/blob/main/doc/knip.md) and
+[Baton/doc/dependency-cruiser.md](https://github.com/OpenLyceum/Baton/blob/main/doc/dependency-cruiser.md).
+
+Architecture rules (see Baton/doc/dependency-cruiser.md): model must not import view or
+preferences view nodes; `common/` / `preferences/` / `i18n/` must not import screen packages;
+`assets/` must not import app code; screen packages must not import each other; `src/` must
+not import `tests/` or npm devDependencies; circular dependencies are prohibited. Warnings
+also cover model→`scenery`/`sun` value imports and orphan modules.
 
 ## TypeScript notes
 
