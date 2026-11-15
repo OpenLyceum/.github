@@ -254,7 +254,7 @@ sim, keep the template config, regression fixtures, hook, package scripts and CI
 Architecture rules reject model→view imports (including through helpers), shared→screen
 imports, cross-screen imports, runtime cycles, unresolved or undeclared packages,
 browser→Node imports, app→tooling imports and app→bootstrap imports. Model value imports
-of `scenery`/`sun` are errors; type-only UI imports are allowed. Orphans are advisory.
+of `scenery`/`sun` are errors; type-only UI imports are allowed. Orphans are errors.
 Local `.dependency-cruiser.local.cjs` overlays may add rules; excludes and rule omissions
 require explicit AGENTS carve-outs. Parser/resolver/traversal overrides are rejected.
 See [Baton/doc/knip.md](https://github.com/OpenLyceum/Baton/blob/main/doc/knip.md) and
