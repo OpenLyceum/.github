@@ -245,7 +245,10 @@ npm run lint && npm run check && npm test && npm run build && npm run test:fuzz:
 | `npm run release` | check + lint + architecture + build + test, then `npm version patch` and push tags |
 | `npm run clean` | Remove `dist/` |
 
-Knip (`check:unused`) is a manual check during adoption. Architecture checks
+Knip (`check:unused`) is a manual check during adoption. The shared `knip.json` enables
+entry-export checks, circular-dependency reporting (`cycles` as errors), and failing
+config hints; see [Baton/doc/knip.md](https://github.com/OpenLyceum/Baton/blob/main/doc/knip.md)
+for `@public` / `@internal` / remove-`export` guidance. Architecture checks
 (`check:architecture`) are enforced across the SceneryStack fleet in pre-push, release
 and CI (`run-architecture: true` in the Baton reusable CI caller). When onboarding a new
 sim, keep the template config, regression fixtures, hook, package scripts and CI opt-in. The template owns `knip.json`, `.dependency-cruiser.cjs` and
