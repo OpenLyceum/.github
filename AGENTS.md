@@ -284,8 +284,11 @@ uses: OpenLyceum/Baton/.github/workflows/ci.yml@main
 
 On push/PR to `main`: `npm ci`, a security audit of direct dependencies, `npm run lint`,
 `npm run check`, `npm test`, `npm run build`, plus Baton's compliance check (and an advisory
-template-drift check), dependency review and CodeQL. Baton's weekly `fleet-health` additionally
-runs `npm run test:fuzz:quick` for every sim.
+template-drift check), dependency review and CodeQL. Callers also pass `run-architecture: true`
+and `unused-mode: required` or `advisory` so the reusable workflow runs dependency-cruiser and
+the separate Knip job (both default and production modes). Baton's weekly `fleet-health`
+additionally runs `npm run test:fuzz:quick` for every sim. Promotion state for required Knip
+baselines lives in [Baton/doc/knip-reviewed-baselines.md](https://github.com/OpenLyceum/Baton/blob/main/doc/knip-reviewed-baselines.md).
 
 Each sim's `.github/workflows/deploy.yml` calls the reusable Pages deploy and must allow
 `workflow_dispatch` (publish without a push, same pair of triggers as Baton's `pages.yml`):
