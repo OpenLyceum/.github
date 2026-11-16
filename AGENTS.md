@@ -15,7 +15,7 @@ This document is the broad shared guide. For a single subsystem (colors, layout,
 | SceneryStack | ^3.0.0 | Simulation framework (PhET-derived) |
 | Vite | ^8 | Build tool and dev server |
 | TypeScript | ^7 | `erasableSyntaxOnly` — no `enum` or `namespace` |
-| Biome | ^2 | Linting + formatting (not ESLint, not Prettier) |
+| Biome | ^2 | Linting + formatting (not ESLint, not Prettier); GritQL convention plugins in `biome-plugins/` |
 | vite-plugin-pwa | ^2 | PWA / offline / installable |
 | Vitest | ^5 | Unit tests on `happy-dom` (`tests/`) |
 | Playwright | ^1 | Fuzz smoke (`tests/fuzz/`) and optional browser specs (`tests/browser/`) |
@@ -233,7 +233,7 @@ npm run lint && npm run check && npm test && npm run build && npm run test:fuzz:
 | `npm run build` | Type-check + production build → `dist/` |
 | `npm run preview` | Preview production build |
 | `npm run check` | TypeScript (`tsc --noEmit` on app, scripts, and tests) |
-| `npm run lint` | Biome check |
+| `npm run lint` | Biome check with `--error-on-warnings` (a `"warn"` rule fails CI and pre-push) |
 | `npm run check:unused` / `npm run knip` | Manual unused-file, export, and dependency report |
 | `npm run check:architecture` | Dependency-cruiser layer and cycle checks on `src/` |
 | `npm run test:architecture` | Architecture rule CLI regression fixtures |
@@ -253,7 +253,7 @@ for `@public` / `@internal` / remove-`export` guidance. Architecture checks
 (`check:architecture`) are enforced across the SceneryStack fleet in pre-push, release
 and CI (`run-architecture: true` in the Baton reusable CI caller). When onboarding a new
 sim, keep the template config, regression fixtures, hook, package scripts and CI opt-in. The template owns `knip.json`, `.dependency-cruiser.cjs` and
-`tests/architecture.test.mjs`.
+`tests/architecture.node-test.ts`.
 
 Architecture rules reject model→view imports (including through helpers), shared→screen
 imports, cross-screen imports, runtime cycles, unresolved or undeclared packages,
