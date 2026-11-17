@@ -245,14 +245,17 @@ npm run lint && npm run check && npm test && npm run build && npm run test:fuzz:
 | `npm run release` | check + lint + architecture + build + test, then `npm version patch` and push tags |
 | `npm run clean` | Remove `dist/` |
 
-Knip (`check:unused`) runs both default and production modes in a separate CI job. The template and
-reviewed sims require it; sims with pending validation retain advisory mode. The shared `knip.json` enables
-entry-export checks, circular-dependency reporting (`cycles` as errors), and failing
-config hints; see [Baton/doc/knip.md](https://github.com/OpenLyceum/Baton/blob/main/doc/knip.md)
+Knip (`check:unused`) runs both default and production modes in a separate CI job.
+Every SceneryStack simulation and SceneryStackTemplate uses `unused-mode: required`
+(see [Baton/doc/knip-reviewed-baselines.md](https://github.com/OpenLyceum/Baton/blob/main/doc/knip-reviewed-baselines.md)).
+The shared `knip.json` enables entry-export checks, circular-dependency reporting
+(`cycles` as errors), and failing config hints; see
+[Baton/doc/knip.md](https://github.com/OpenLyceum/Baton/blob/main/doc/knip.md)
 for `@public` / `@internal` / remove-`export` guidance. Architecture checks
 (`check:architecture`) are enforced across the SceneryStack fleet in pre-push, release
 and CI (`run-architecture: true` in the Baton reusable CI caller). When onboarding a new
-sim, keep the template config, regression fixtures, hook, package scripts and CI opt-in. The template owns `knip.json`, `.dependency-cruiser.cjs` and
+sim, keep the template config, regression fixtures, hook, package scripts and CI opt-in
+(`unused-mode: required`). The template owns `knip.json`, `.dependency-cruiser.cjs` and
 `tests/architecture.node-test.ts`.
 
 Architecture rules reject model→view imports (including through helpers), shared→screen
@@ -285,10 +288,10 @@ uses: OpenLyceum/Baton/.github/workflows/ci.yml@main
 On push/PR to `main`: `npm ci`, a security audit of direct dependencies, `npm run lint`,
 `npm run check`, `npm test`, `npm run build`, plus Baton's compliance check (and an advisory
 template-drift check), dependency review and CodeQL. Callers also pass `run-architecture: true`
-and `unused-mode: required` or `advisory` so the reusable workflow runs dependency-cruiser and
-the separate Knip job (both default and production modes). Baton's weekly `fleet-health`
-additionally runs `npm run test:fuzz:quick` for every sim. Promotion state for required Knip
-baselines lives in [Baton/doc/knip-reviewed-baselines.md](https://github.com/OpenLyceum/Baton/blob/main/doc/knip-reviewed-baselines.md).
+and `unused-mode: required` so the reusable workflow runs dependency-cruiser and the separate
+Knip job (both default and production modes). Baton's weekly `fleet-health` additionally runs
+`npm run test:fuzz:quick` for every sim. The required-Knip baseline roster lives in
+[Baton/doc/knip-reviewed-baselines.md](https://github.com/OpenLyceum/Baton/blob/main/doc/knip-reviewed-baselines.md).
 
 Each sim's `.github/workflows/deploy.yml` calls the reusable Pages deploy and must allow
 `workflow_dispatch` (publish without a push, same pair of triggers as Baton's `pages.yml`):
