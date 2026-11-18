@@ -6,7 +6,33 @@ Each sim repo has its own `AGENTS.md` with **sim-specific** context only (archit
 
 Community files (contributing, license, issue templates) live in [OpenLyceum/.github](https://github.com/OpenLyceum/.github). Orchestration — reusable CI/CD workflows, the repo catalog, and the compliance audit — lives in [OpenLyceum/Baton](https://github.com/OpenLyceum/Baton). Simulation READMEs follow a fixed six-section outline enforced by Baton's compliance check.
 
-This document is the broad shared guide. For a single subsystem (colors, layout, drag listeners, preferences, i18n, accessibility, …) there is a deeper per-topic reference in [`Baton/skills/`](https://github.com/OpenLyceum/Baton/tree/main/skills) — each file says when it applies; see its [index](https://github.com/OpenLyceum/Baton/blob/main/skills/README.md). The structural and accessibility conventions live in [Baton/CONVENTIONS.md](https://github.com/OpenLyceum/Baton/blob/main/CONVENTIONS.md) and [Baton/ACCESSIBILITY.md](https://github.com/OpenLyceum/Baton/blob/main/ACCESSIBILITY.md).
+This document is the broad shared guide. For a single subsystem there is a deeper per-topic
+reference in [`Baton/skills/`](https://github.com/OpenLyceum/Baton/tree/main/skills) — each
+`SKILL.md` says when it applies; see the [index](https://github.com/OpenLyceum/Baton/blob/main/skills/README.md).
+**Read the matching skill before editing that subsystem.** Structural and accessibility
+conventions: [Baton/CONVENTIONS.md](https://github.com/OpenLyceum/Baton/blob/main/CONVENTIONS.md),
+[Baton/ACCESSIBILITY.md](https://github.com/OpenLyceum/Baton/blob/main/ACCESSIBILITY.md).
+
+Task → skill (load `Baton/skills/<name>/SKILL.md`):
+
+| Task | Skill |
+|---|---|
+| CRC / pre-release code review | `scenerystack-code-review` (+ `references/functional-review.md`) |
+| TypeScript style / optionize | `scenerystack-coding-conventions`, `scenerystack-optionize` |
+| Property / DerivedProperty / Multilink | `scenerystack-axon` |
+| Model `step`/`reset`, TModel | `scenerystack-model` |
+| Magic numbers / `*Constants.ts` | `scenerystack-constants` |
+| Colors / projector contrast | `scenerystack-color-profiles` |
+| Sliders, Reset All, Panel chrome | `scenerystack-ui-controls` |
+| Drag + keyboard drag | `scenerystack-drag-listener` |
+| Memory leaks / dispose | `scenerystack-disposal`, `scenerystack-testing` |
+| Unit / fuzz / browser / soak tests | `scenerystack-testing` |
+| WebGPU / `common/gpu/` | `scenerystack-webgpu` |
+| Strings / locales | `scenerystack-strings`, `scenerystack-i18n` |
+| Keyboard-help `?` dialog | `scenerystack-keyboard-help-dialog` |
+| PDOM / screen reader | `scenerystack-accessibility` |
+| Preferences / query params | `scenerystack-preferences`, `scenerystack-query-parameters` |
+| New sim from template | `scenerystack-new-sim` |
 
 ## Tech stack
 
@@ -111,7 +137,8 @@ const frequencyProperty = new DerivedProperty(
 );
 ```
 
-Use `TReadOnlyProperty<T>` for read-only constructor parameters.
+Use `TReadOnlyProperty<T>` for read-only constructor parameters. Full Property /
+`Multilink` / read-vs-write patterns: [`scenerystack-axon`](https://github.com/OpenLyceum/Baton/blob/main/skills/scenerystack-axon/SKILL.md).
 
 ### Color profiles
 
@@ -142,35 +169,9 @@ Add keys to `strings_en.json` and **every** locale file. Expose via `StringManag
 
 ### Keyboard-help dialog
 
-Every sim wires the navigation-bar keyboard-help (`?`) dialog through each **Screen** — never in `main.ts`/`init.ts`. Add a `<SimName>KeyboardHelpContent` class in the sim's `view/` (or `common/view/` for multi-screen sims) that extends `TwoColumnKeyboardHelpContent`, and pass it via the `createKeyboardHelpNode` screen option:
-
-```typescript
-import {
-  BasicActionsKeyboardHelpSection,
-  ComboBoxKeyboardHelpSection,
-  SliderControlsKeyboardHelpSection,
-  TwoColumnKeyboardHelpContent,
-} from "scenerystack/scenery-phet";
-
-export class MyKeyboardHelpContent extends TwoColumnKeyboardHelpContent {
-  public constructor() {
-    super(
-      // Left column: the interaction-specific sections this sim actually uses.
-      [new SliderControlsKeyboardHelpSection(), new ComboBoxKeyboardHelpSection()],
-      // Right column: Tab/button navigation (+ checkbox toggling when present).
-      [new BasicActionsKeyboardHelpSection({ withCheckboxContent: true })],
-    );
-  }
-}
-
-// in the Screen — keep the default after `...options`:
-super(() => new MyModel(), (model) => new MyScreenView(model), {
-  ...options,
-  createKeyboardHelpNode: () => new MyKeyboardHelpContent(),
-});
-```
-
-Compose only the standard sections the sim actually has (slider / combo box / checkbox). For a sim with no sliders or combo boxes, use a single column: `super([new BasicActionsKeyboardHelpSection()], [])`. Standard sections carry their own i18n, so no new strings are needed unless you hand-author custom `KeyboardHelpSection` rows.
+Wire the navigation-bar `?` dialog through each **Screen** (`createKeyboardHelpNode`), never
+in `main.ts`/`init.ts`. Full pattern, stubs to avoid, and HotkeyData sharing:
+[`scenerystack-keyboard-help-dialog`](https://github.com/OpenLyceum/Baton/blob/main/skills/scenerystack-keyboard-help-dialog/SKILL.md).
 
 ## SceneryStack module paths
 
