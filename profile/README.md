@@ -8,8 +8,6 @@
 
 <div align="center">
 
-# OpenLyceum
-
 **Interactive physics, astronomy, and chemistry for the browser**
 
 Open-source [SceneryStack](https://scenerystack.org/) simulations, with shared CI, docs, and accessibility across the fleet.
