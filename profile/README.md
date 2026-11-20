@@ -1,20 +1,20 @@
 <!--
   Org profile — shown on https://github.com/OpenLyceum
-  When adding a sim (see doc/add-simulation.md in the orchestration repo):
-    1. Bump the **N** in the badge / “N simulations” line below
-    2. Add one table row under NAAP, PhET, or Original (match repos.json lineage)
-  The featured strip is optional chrome — leave it alone unless you want a new highlight.
+  The full list of simulations lives in the catalog (www.openlyceum.com, built
+  from Baton/structure/repos.json). Don't add a full table here.
+  When adding a sim: bump the N in the badge and the "Browse all N" link.
+  Add it to an "Explore" line only if it should be a highlight.
 -->
 
 <div align="center">
 
 # OpenLyceum
 
-**Interactive physics and astronomy for the browser**
+**Interactive physics, astronomy, and chemistry for the browser**
 
-Open-source [SceneryStack](https://scenerystack.org/) simulations — NAAP astronomy labs, PhET rebuilds, and original work — with shared CI, docs, and accessibility across the fleet.
+Open-source [SceneryStack](https://scenerystack.org/) simulations, with shared CI, docs, and accessibility across the fleet.
 
-[**Browse the catalog →**](https://openlyceum.github.io/Baton/)
+[**Browse all 74 simulations →**](https://www.openlyceum.com/)
 &nbsp;·&nbsp;
 [Clone the workspace](https://github.com/OpenLyceum/OpenLyceum)
 &nbsp;·&nbsp;
@@ -29,128 +29,33 @@ Open-source [SceneryStack](https://scenerystack.org/) simulations — NAAP astro
 
 <br />
 
-<a href="https://openlyceum.github.io/MovingMan/"><img src="https://openlyceum.github.io/Baton/assets/MovingMan.webp" width="148" alt="Moving Man" /></a>
-<a href="https://openlyceum.github.io/ExtrasolarPlanets/"><img src="https://openlyceum.github.io/Baton/assets/ExtrasolarPlanets.webp" width="148" alt="Extrasolar Planets" /></a>
-<a href="https://openlyceum.github.io/ACPhasor/"><img src="https://openlyceum.github.io/Baton/assets/ACPhasor.webp" width="148" alt="AC Phasor" /></a>
-<a href="https://openlyceum.github.io/SternGerlach/"><img src="https://openlyceum.github.io/Baton/assets/SternGerlach.webp" width="148" alt="Stern–Gerlach" /></a>
-<a href="https://openlyceum.github.io/PlateTectonics/"><img src="https://openlyceum.github.io/Baton/assets/PlateTectonics.webp" width="148" alt="Plate Tectonics" /></a>
-<a href="https://openlyceum.github.io/Zenith/"><img src="https://openlyceum.github.io/Baton/assets/Zenith.webp" width="148" alt="Zenith" /></a>
+<a href="https://openlyceum.github.io/OpticsLab/"><img src="https://www.openlyceum.com/assets/OpticsLab.webp" width="160" alt="Optics Lab" /></a>
+<a href="https://openlyceum.github.io/Zenith/"><img src="https://www.openlyceum.com/assets/Zenith.webp" width="160" alt="Zenith" /></a>
+<a href="https://openlyceum.github.io/QubitSketch/"><img src="https://www.openlyceum.com/assets/QubitSketch.webp" width="160" alt="Qubit Sketch" /></a>
+<a href="https://openlyceum.github.io/TrackLab/"><img src="https://www.openlyceum.com/assets/TrackLab.webp" width="160" alt="Track Lab" /></a>
+<a href="https://openlyceum.github.io/DopplerEffect/"><img src="https://www.openlyceum.com/assets/DopplerEffect.webp" width="160" alt="Doppler Effect" /></a>
 
 </div>
 
 ---
 
-## Simulations
+## Explore
 
-Each row links the repo and a live GitHub Pages build. Full cards and screenshots live on the [simulation index](https://openlyceum.github.io/Baton/).
+- **Physics:** [Optics Lab](https://openlyceum.github.io/OpticsLab/) · [Track Lab](https://openlyceum.github.io/TrackLab/) · [Doppler Effect](https://openlyceum.github.io/DopplerEffect/) · [Qubit Sketch](https://openlyceum.github.io/QubitSketch/) · [Special Relativity](https://openlyceum.github.io/SpecialRelativity/) · [AC Phasor](https://openlyceum.github.io/ACPhasor/)
+- **Astronomy:** [Zenith](https://openlyceum.github.io/Zenith/) · [Transit Hunter](https://openlyceum.github.io/TransitHunter/) · [HR Diagram](https://openlyceum.github.io/HRDiagram/) · [Stellar Wobble](https://openlyceum.github.io/StellarWobble/) · [Habitability Lab](https://openlyceum.github.io/HabitabilityLab/)
+- **Chemistry:** [Titration Lab](https://openlyceum.github.io/TitrationLab/) · [MolScope](https://openlyceum.github.io/MolScope/) · [Lewis Structures](https://openlyceum.github.io/LewisStructures/) · [Electron Configuration](https://openlyceum.github.io/ElectronConfiguration/) · [Spectroscopy Lab](https://openlyceum.github.io/SpectroscopyLab/)
+- **Earth science:** [Plate Tectonics](https://openlyceum.github.io/PlateTectonics/)
 
-### NAAP — astronomy labs
+Every simulation, with screenshots and descriptions, is in the [**catalog**](https://www.openlyceum.com/).
 
-Ports of [Nebraska Astronomy Applet Project](https://astro.unl.edu/naap/) labs.
+## For developers
 
-| Simulation | Live | Focus |
-| --- | --- | --- |
-| **[Basic Coordinates & Seasons](https://github.com/OpenLyceum/BasicCoordinatesAndSeasons)** | [Try it](https://openlyceum.github.io/BasicCoordinatesAndSeasons/) | Terrestrial & celestial coordinates, seasons |
-| **[Extrasolar Planets](https://github.com/OpenLyceum/ExtrasolarPlanets)** | [Try it](https://openlyceum.github.io/ExtrasolarPlanets/) | Radial-velocity and transit detection |
-| **[Habitable Zones](https://github.com/OpenLyceum/HabitableZones)** | [Try it](https://openlyceum.github.io/HabitableZones/) | Circumstellar and galactic habitability |
-| **[Motions of the Sun](https://github.com/OpenLyceum/MotionsOfTheSun)** | [Try it](https://openlyceum.github.io/MotionsOfTheSun/) | Sun paths, sidereal time, zodiac |
-| **[Rotating Sky](https://github.com/OpenLyceum/RotatingSky)** | [Try it](https://openlyceum.github.io/RotatingSky/) | Horizon and celestial-sphere motion |
-| **[Solar System Models](https://github.com/OpenLyceum/SolarSystemModels)** | [Try it](https://openlyceum.github.io/SolarSystemModels/) | Ptolemaic vs. heliocentric models |
-| **[Variable Star Photometry](https://github.com/OpenLyceum/VariableStarPhotometry)** | [Try it](https://openlyceum.github.io/VariableStarPhotometry/) | CCD registration, photometry, period finding |
-
-### PhET — classic rebuilds
-
-Modern SceneryStack rebuilds of [PhET Interactive Simulations](https://phet.colorado.edu/).
-
-| Simulation | Live | Focus |
-| --- | --- | --- |
-| **[Electric Field of Dreams](https://github.com/OpenLyceum/ElectricFieldOfDreams)** | [Try it](https://openlyceum.github.io/ElectricFieldOfDreams/) | Coulomb forces and uniform external fields |
-| **[Fluid Pressure and Flow](https://github.com/OpenLyceum/FluidPressureAndFlow)** | [Try it](https://openlyceum.github.io/FluidPressureAndFlow/) | Hydrostatic pressure, Bernoulli flow, and water tower |
-| **[Lady Bug](https://github.com/OpenLyceum/LadyBug)** | [Try it](https://openlyceum.github.io/LadyBug/) | 2D motion, position, velocity, acceleration |
-| **[Lasers](https://github.com/OpenLyceum/Lasers)** | [Try it](https://openlyceum.github.io/Lasers/) | Absorption, stimulated emission, optical pumping, and laser operation |
-| **[Lunar Lander](https://github.com/OpenLyceum/LunarLander)** | [Try it](https://openlyceum.github.io/LunarLander/) | Thrust, tilt, and landing dynamics |
-| **[Maze Game](https://github.com/OpenLyceum/MazeGame)** | [Try it](https://openlyceum.github.io/MazeGame/) | Tile-based kinematics challenge |
-| **[Moving Man](https://github.com/OpenLyceum/MovingMan)** | [Try it](https://openlyceum.github.io/MovingMan/) | 1D kinematics with graphs |
-| **[Radio Waves](https://github.com/OpenLyceum/RadioWaves)** | [Try it](https://openlyceum.github.io/RadioWaves/) | EM radiation and antenna fields |
-| **[Simplified MRI](https://github.com/OpenLyceum/SimplifiedMRI)** | [Try it](https://openlyceum.github.io/SimplifiedMRI/) | NMR resonance, gradient slice selection in a head, and T1/T2 relaxation |
-| **[The Ramp](https://github.com/OpenLyceum/TheRamp)** | [Try it](https://openlyceum.github.io/TheRamp/) | Forces, friction, and energy on a ramp |
-
-### Original — OpenLyceum labs
-
-Optics, quantum circuits, resonance, Earth science, motion analysis, and more.
-
-| Simulation | Live | Focus |
-| --- | --- | --- |
-| **[AC Phasor](https://github.com/OpenLyceum/ACPhasor)** | [Try it](https://openlyceum.github.io/ACPhasor/) | RLC phasors, impedance, resonance, and AC power |
-| **[Backward Acceleration](https://github.com/OpenLyceum/BackwardAcceleration)** | [Try it](https://openlyceum.github.io/BackwardAcceleration/) | Predict and measure v–t and a–t graphs of a cart on a ramp — virtual or a real PASCO Smart Cart |
-| **[Biomechanics Arm](https://github.com/OpenLyceum/BiomechanicsArm)** | [Try it](https://openlyceum.github.io/BiomechanicsArm/) | Torque on a model arm: live tension and angle from PASCO force and rotary motion sensors |
-| **[Capacitor Lab](https://github.com/OpenLyceum/CapacitorLab)** | [Try it](https://openlyceum.github.io/CapacitorLab/) | Plate area, separation, dielectrics, and series/parallel networks |
-| **[Carnot Heat Engine](https://github.com/OpenLyceum/CarnotHeatEngine)** | [Try it](https://openlyceum.github.io/CarnotHeatEngine/) | Carnot cycle: PV/TS diagrams, efficiency, refrigerator & heat pump |
-| **[Crystal Lattice](https://github.com/OpenLyceum/CrystalLattice)** | [Try it](https://openlyceum.github.io/CrystalLattice/) | Bravais lattices, cubic cells, close packing, Miller indices, quasicrystals |
-| **[Data Lab](https://github.com/OpenLyceum/DataLab)** | [Try it](https://openlyceum.github.io/DataLab/) | Curve fitting, measurement, and kinematics data analysis |
-| **[Diffraction Lab](https://github.com/OpenLyceum/DiffractionLab)** | [Try it](https://openlyceum.github.io/DiffractionLab/) | Fraunhofer diffraction: N-slit phasors, grating resolving power, the Airy disk and Rayleigh criterion, holography |
-| **[Doppler Effect](https://github.com/OpenLyceum/DopplerEffect)** | [Try it](https://openlyceum.github.io/DopplerEffect/) | Sound waves and relative motion |
-| **[Electron Configuration](https://github.com/OpenLyceum/ElectronConfiguration)** | [Try it](https://openlyceum.github.io/ElectronConfiguration/) | Orbital diagrams, periodic configurations, common ions, and detective challenges |
-| **[Exoplanets Database](https://github.com/OpenLyceum/ExoplanetsDatabase)** | [Try it](https://openlyceum.github.io/ExoplanetsDatabase/) | The NASA Exoplanet Archive made friendly: counts, a filterable table, preset plots by discovery method |
-| **[Field Boundary](https://github.com/OpenLyceum/FieldBoundary)** | [Try it](https://openlyceum.github.io/FieldBoundary/) | Maxwell boundary conditions for E/D and B/H at a planar interface |
-| **[Fluid Dynamics](https://github.com/OpenLyceum/FluidDynamics)** | [Try it](https://openlyceum.github.io/FluidDynamics/) | Intro and Lab screens for interactive fluid flow |
-| **[Habitability Lab](https://github.com/OpenLyceum/HabitabilityLab)** | [Try it](https://openlyceum.github.io/HabitabilityLab/) | Exoplanet habitability: energy balance, greenhouse and water, habitable-zone edges with real planets, an aging star, atmospheric escape |
-| **[Heat Transfer](https://github.com/OpenLyceum/HeatTransfer)** | [Try it](https://openlyceum.github.io/HeatTransfer/) | WebGPU heat field: conduction, convection, transport, and materials |
-| **[HR Diagram](https://github.com/OpenLyceum/HRDiagram)** | [Try it](https://openlyceum.github.io/HRDiagram/) | Hertzsprung–Russell diagram of real Gaia and Hipparcos stars: radius from temperature and luminosity, nearest vs brightest stars, a census within 100 pc |
-| **[Interferometry Lab](https://github.com/OpenLyceum/InterferometryLab)** | [Try it](https://openlyceum.github.io/InterferometryLab/) | Michelson, Mach-Zehnder, and Fabry-Perot interferometers |
-| **[Light Propagation](https://github.com/OpenLyceum/LightPropagation)** | [Try it](https://openlyceum.github.io/LightPropagation/) | Polarizers and wave plates |
-| **[Mercury Elongations](https://github.com/OpenLyceum/MercuryElongations)** | [Try it](https://openlyceum.github.io/MercuryElongations/) | Synchronized planetarium and orbital views of Mercury's elongation |
-| **[Motion Match](https://github.com/OpenLyceum/MotionMatch)** | [Try it](https://openlyceum.github.io/MotionMatch/) | Match position/velocity graphs with pointer or PASCO motion sensor |
-| **[Motion Sensor](https://github.com/OpenLyceum/MotionSensor)** | [Try it](https://openlyceum.github.io/MotionSensor/) | Record motion and plot position, velocity, acceleration |
-| **[Nuclide Chart](https://github.com/OpenLyceum/NuclideChart)** | [Try it](https://openlyceum.github.io/NuclideChart/) | Nuclear binding energies, magic numbers, isobars, half-lives, and decay chains |
-| **[Optics Lab](https://github.com/OpenLyceum/OpticsLab)** | [Try it](https://openlyceum.github.io/OpticsLab/) | Geometric optics and refraction |
-| **[Oscillations & Chaos](https://github.com/OpenLyceum/OscillationsAndChaos)** | [Try it](https://openlyceum.github.io/OscillationsAndChaos/) | Springs, pendulums, and chaos |
-| **[Oscilloscope](https://github.com/OpenLyceum/Oscilloscope)** | [Try it](https://openlyceum.github.io/Oscilloscope/) | Bench scope: function generator, mic, trigger, FFT |
-| **[Photon Interactions](https://github.com/OpenLyceum/PhotonInteractions)** | [Try it](https://openlyceum.github.io/PhotonInteractions/) | Compton scattering, X-ray tube spectra, pair production, and annihilation |
-| **[Planetary Configurations](https://github.com/OpenLyceum/PlanetaryConfigurations)** | [Try it](https://openlyceum.github.io/PlanetaryConfigurations/) | Elongations, synodic and sidereal periods, retrograde motion, and Ptolemy's epicycles for the NAAP Solar System Models lab |
-| **[Plate Tectonics](https://github.com/OpenLyceum/PlateTectonics)** | [Try it](https://openlyceum.github.io/PlateTectonics/) | Plate boundaries, earthquakes, volcanoes, cross-sections, and 50 Myr reconstruction |
-| **[Precession](https://github.com/OpenLyceum/Precession)** | [Try it](https://openlyceum.github.io/Precession/) | Rigid-body precession, nutation, and torque-free tumbling |
-| **[Quantum Potential](https://github.com/OpenLyceum/QuantumPotential)** | [Try it](https://openlyceum.github.io/QuantumPotential/) | Bound states in potential wells; real-time 1D Schrödinger equation |
-| **[Qubit Sketch](https://github.com/OpenLyceum/QubitSketch)** | [Try it](https://openlyceum.github.io/QubitSketch/) | Drag-and-drop quantum circuits |
-| **[Radioactivity and Statistics](https://github.com/OpenLyceum/RadioactivityAndStatistics)** | [Try it](https://openlyceum.github.io/RadioactivityAndStatistics/) | Counting statistics with simulated or PASCO Geiger counter |
-| **[Resonance](https://github.com/OpenLyceum/Resonance)** | [Try it](https://openlyceum.github.io/Resonance/) | Driven oscillators and Chladni patterns |
-| **[Special Relativity](https://github.com/OpenLyceum/SpecialRelativity)** | [Try it](https://openlyceum.github.io/SpecialRelativity/) | Light clock, Minkowski spacetime diagrams, twin paradox, relativistic Doppler |
-| **[Standing Waves](https://github.com/OpenLyceum/StandingWaves)** | [Try it](https://openlyceum.github.io/StandingWaves/) | Longitudinal standing waves in pipes: reflection, phase, harmonics |
-| **[Stellar Wobble](https://github.com/OpenLyceum/StellarWobble)** | [Try it](https://openlyceum.github.io/StellarWobble/) | Exoplanets by radial velocity: Doppler-shifted lines, the star's wobble, viewing angle, fitting data |
-| **[Stern–Gerlach](https://github.com/OpenLyceum/SternGerlach)** | [Try it](https://openlyceum.github.io/SternGerlach/) | Spin analyzers and quantum spin projections |
-| **[Track Lab](https://github.com/OpenLyceum/TrackLab)** | [Try it](https://openlyceum.github.io/TrackLab/) | Video motion analysis and object tracking |
-| **[Transit Hunter](https://github.com/OpenLyceum/TransitHunter)** | [Try it](https://openlyceum.github.io/TransitHunter/) | Exoplanets by transits: dimming starlight, alignment, light curves, real Kepler and TESS data, planet densities |
-| **[Vernier Scales](https://github.com/OpenLyceum/VernierScales)** | [Try it](https://openlyceum.github.io/VernierScales/) | Vernier calipers, micrometers, and reading practice |
-| **[Wave Composer](https://github.com/OpenLyceum/WaveComposer)** | [Try it](https://openlyceum.github.io/WaveComposer/) | Live voice analysis and composition |
-| **[Zenith](https://github.com/OpenLyceum/Zenith)** | [Try it](https://openlyceum.github.io/Zenith/) | Planetarium sky from latitude, longitude, LST |
-
----
-
-## Tools & infrastructure
-
-| Repo | Link | What it is |
-| --- | --- | --- |
-| **[Almanach](https://github.com/OpenLyceum/Almanach)** | [Docs](https://openlyceum.github.io/Almanach/) | SceneryStack knowledge base (humans + LLMs) |
-| **[Baseline](https://github.com/OpenLyceum/Baseline)** | — | Upstream baselines and ground-truth snapshots |
-| **[Catalog & CI](https://github.com/OpenLyceum/Baton)** | [Index](https://openlyceum.github.io/Baton/) | Simulation catalog, fleet automation, reusable workflows |
-
-### Template
-
-**[SceneryStackTemplate](https://github.com/OpenLyceum/SceneryStackTemplate)** — start a new accessible SceneryStack sim (one or N screens). See also [adding a simulation](https://github.com/OpenLyceum/Baton/blob/main/doc/add-simulation.md).
-
----
-
-## Get involved
+[Almanach](https://openlyceum.github.io/Almanach/) (SceneryStack knowledge base) · [Baton](https://github.com/OpenLyceum/Baton) (catalog, CI, fleet scripts) · [SceneryStackTemplate](https://github.com/OpenLyceum/SceneryStackTemplate) (start a new sim) · [Baseline](https://github.com/OpenLyceum/Baseline) (upstream snapshots)
 
 ```bash
 git clone https://github.com/OpenLyceum/OpenLyceum.git
 cd OpenLyceum && ./bootstrap.sh --simulation
+cd <SimName> && npm start
 ```
 
-Then open any sim with `cd <SimName> && npm start`. Contribution guide: [CONTRIBUTING.md](https://github.com/OpenLyceum/.github/blob/main/CONTRIBUTING.md).
-
-<div align="center">
-
-[**Explore all simulations →**](https://openlyceum.github.io/Baton/)
-
-</div>
+<sub>Some simulations began as rebuilds of PhET Interactive Simulations or Nebraska Astronomy Applet Project labs. See each repo's README for attribution.</sub>
