@@ -50,8 +50,7 @@ Every simulation, with screenshots and descriptions, is in the [**catalog**](htt
 
 ## For developers
 
-[Almanach](https://openlyceum.github.io/Almanach/) (SceneryStack knowledge base) · [Baton](https://github.com/OpenLyceum/Baton) (catalog, CI, fleet scripts) · [SceneryStackTemplate](https://github.com/OpenLyceum/SceneryStackTemplate) (start a new sim) · [Baseline](https://github.com/OpenLyceum/Baseline) (upstream snapshots)
-
+[Almanach](https://openlyceum.github.io/Almanach/) (SceneryStack knowledge base) · [Baton](https://github.com/OpenLyceum/Baton) (catalog, CI, fleet scripts) · [SceneryStackTemplate](https://github.com/OpenLyceum/SceneryStackTemplate) (start a new sim)
 ```bash
 git clone https://github.com/OpenLyceum/OpenLyceum.git
 cd OpenLyceum && ./bootstrap.sh --simulation
