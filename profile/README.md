@@ -12,7 +12,7 @@
 
 Open-source [SceneryStack](https://scenerystack.org/) simulations, with shared CI, docs, and accessibility across the fleet.
 
-[**Browse all 74 simulations →**](https://www.openlyceum.com/)
+[**Browse all 82 simulations →**](https://www.openlyceum.com/)
 &nbsp;·&nbsp;
 [Clone the workspace](https://github.com/OpenLyceum/OpenLyceum)
 &nbsp;·&nbsp;
@@ -20,7 +20,7 @@ Open-source [SceneryStack](https://scenerystack.org/) simulations, with shared C
 
 <br />
 
-![74 simulations](https://img.shields.io/badge/74-simulations-0f2744?style=flat-square)
+![82 simulations](https://img.shields.io/badge/82-simulations-0f2744?style=flat-square)
 ![SceneryStack](https://img.shields.io/badge/SceneryStack-TypeScript-1a4a7a?style=flat-square)
 ![Vite](https://img.shields.io/badge/build-Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![License](https://img.shields.io/badge/license-AGPL--3.0-2d6a4f?style=flat-square)
