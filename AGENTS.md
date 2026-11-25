@@ -260,7 +260,8 @@ sim, keep the template config, regression fixtures, hook, package scripts and CI
 `tests/architecture.node-test.ts`.
 
 Architecture rules reject model→view imports (including through helpers), shared→screen
-imports, cross-screen imports, runtime cycles, unresolved or undeclared packages,
+imports (including from root modules other than `main.ts`), cross-screen imports, runtime
+cycles, unresolved or undeclared packages,
 browser→Node imports, app→tooling imports and app→bootstrap imports. Model value imports
 of `scenery`/`sun` are errors; type-only UI imports are allowed. Orphans are errors.
 Models must not value-import `*Colors.ts`. Source modules must be reachable from `main.ts`
@@ -287,8 +288,9 @@ uses: OpenLyceum/Baton/.github/workflows/ci.yml@main
 ```
 
 On push/PR to `main`: `npm ci`, a security audit of direct dependencies, `npm run lint`,
-`npm run check`, `npm test`, `npm run build`, plus Baton's compliance check (and an advisory
-template-drift check), dependency review and CodeQL. Callers also pass `run-architecture: true`
+`npm run check`, `npm test`, `npm run build`, plus Baton's compliance check, dependency review
+and CodeQL. Compliance requires the shared architecture config, fixtures and commands to match
+the template. The general template-drift check is advisory. Callers also pass `run-architecture: true`
 and `unused-mode: required` so the reusable workflow runs dependency-cruiser and the separate
 Knip job (both default and production modes). Baton's weekly `fleet-health` additionally runs
 `npm run test:fuzz:quick` for every sim. The required-Knip baseline roster lives in
