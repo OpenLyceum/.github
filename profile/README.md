@@ -12,7 +12,7 @@
 
 Open-source [SceneryStack](https://scenerystack.org/) simulations, with shared CI, docs, and accessibility across the fleet.
 
-[**Browse all 82 simulations →**](https://www.openlyceum.com/)
+[**Browse all 84 simulations →**](https://www.openlyceum.com/)
 &nbsp;·&nbsp;
 [Clone the workspace](https://github.com/OpenLyceum/OpenLyceum)
 &nbsp;·&nbsp;
@@ -20,7 +20,7 @@ Open-source [SceneryStack](https://scenerystack.org/) simulations, with shared C
 
 <br />
 
-![82 simulations](https://img.shields.io/badge/82-simulations-0f2744?style=flat-square)
+![84 simulations](https://img.shields.io/badge/84-simulations-0f2744?style=flat-square)
 ![SceneryStack](https://img.shields.io/badge/SceneryStack-TypeScript-1a4a7a?style=flat-square)
 ![Vite](https://img.shields.io/badge/build-Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![License](https://img.shields.io/badge/license-AGPL--3.0-2d6a4f?style=flat-square)
@@ -41,7 +41,7 @@ Open-source [SceneryStack](https://scenerystack.org/) simulations, with shared C
 
 - **Physics:** [Optics Lab](https://openlyceum.github.io/OpticsLab/) · [Track Lab](https://openlyceum.github.io/TrackLab/) · [Doppler Effect](https://openlyceum.github.io/DopplerEffect/) · [Qubit Sketch](https://openlyceum.github.io/QubitSketch/) · [Special Relativity](https://openlyceum.github.io/SpecialRelativity/) · [AC Phasor](https://openlyceum.github.io/ACPhasor/)
 - **Astronomy:** [Zenith](https://openlyceum.github.io/Zenith/) · [Transit Hunter](https://openlyceum.github.io/TransitHunter/) · [HR Diagram](https://openlyceum.github.io/HRDiagram/) · [Stellar Wobble](https://openlyceum.github.io/StellarWobble/) · [Habitability Lab](https://openlyceum.github.io/HabitabilityLab/)
-- **Chemistry:** [Titration Lab](https://openlyceum.github.io/TitrationLab/) · [MolScope](https://openlyceum.github.io/MolScope/) · [Lewis Structures](https://openlyceum.github.io/LewisStructures/) · [Electron Configuration](https://openlyceum.github.io/ElectronConfiguration/) · [Spectroscopy Lab](https://openlyceum.github.io/SpectroscopyLab/)
+- **Chemistry:** [Titration Lab](https://openlyceum.github.io/TitrationLab/) · [MolScope](https://openlyceum.github.io/MolScope/) · [Lewis Structures](https://openlyceum.github.io/LewisStructures/) · [Electron Configuration](https://openlyceum.github.io/ElectronConfiguration/) · [Spectroscopy Lab](https://openlyceum.github.io/SpectroscopyLab/) · [Stereochemistry](https://openlyceum.github.io/Stereochemistry/)
 - **Earth science:** [Plate Tectonics](https://openlyceum.github.io/PlateTectonics/)
 
 Every simulation, with screenshots and descriptions, is in the [**catalog**](https://www.openlyceum.com/).
